@@ -1,0 +1,2022 @@
+[
+  {
+    "id": 1,
+    "name": "Shot de Imunidade Premium",
+    "category": "shots",
+    "image": "🍋",
+    "ingredients": [
+      "1 limão fresco",
+      "1 colher de chá de cúrcuma em pó",
+      "1 pitada de pimenta preta",
+      "30 gotas de própolis verde",
+      "50ml de água morna"
+    ],
+    "benefits": ["imunidade", "anti-inflamação", "metabolismo"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 15,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "3g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Esprema o limão fresco em um copo pequeno",
+      "Adicione a água morna",
+      "Dissolva a cúrcuma e a pimenta preta",
+      "Adicione as 30 gotas de própolis verde",
+      "Misture bem e beba imediatamente"
+    ],
+    "tips": [
+      "Beba em jejum para melhor absorção",
+      "A pimenta preta potencializa a absorção da cúrcuma",
+      "Própolis verde é mais potente que a vermelha"
+    ],
+    "variations": [
+      "Adicione 1 colher de mel para adoçar",
+      "Substitua a própolis por 2 gotas de extrato de gengibre"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shot Seca Bucho Termogênico",
+    "category": "shots",
+    "image": "🌶️",
+    "ingredients": [
+      "50ml de água filtrada",
+      "1 colher de café de gengibre em pó",
+      "1 colher de café de canela em pó",
+      "1 limão médio",
+      "1 pitada de sal marinho"
+    ],
+    "benefits": ["metabolismo", "queima de gordura", "energia"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 12,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "2.5g",
+      "fat": "0.05g"
+    },
+    "instructions": [
+      "Aqueça a água até 60-70°C (não fervendo)",
+      "Adicione o gengibre e a canela em pó",
+      "Esprema o limão e adicione ao shot",
+      "Adicione uma pitada de sal marinho",
+      "Misture bem e beba rapidamente"
+    ],
+    "tips": [
+      "Melhor tomado logo após acordar",
+      "Gengibre fresco ralado é mais potente que o pó",
+      "O sal marinho ajuda na absorção de minerais"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de guaraná em pó",
+      "Use gengibre fresco ralado ao invés de pó"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Shot de Guaraná e Cúrcuma",
+    "category": "shots",
+    "image": "⚡",
+    "ingredients": [
+      "50ml de água filtrada",
+      "1 colher de café de guaraná em pó",
+      "1 colher de café de cúrcuma em pó",
+      "1 limão fresco",
+      "1 colher de chá de mel"
+    ],
+    "benefits": ["energia", "foco mental", "metabolismo"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 20,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "5g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Despeje a água em um copo",
+      "Adicione o guaraná em pó e misture bem",
+      "Adicione a cúrcuma e misture até dissolver",
+      "Esprema o limão",
+      "Adicione o mel e beba imediatamente"
+    ],
+    "tips": [
+      "Guaraná tem mais cafeína que café",
+      "Ideal para antes de treinos ou trabalho intenso",
+      "Não recomendado após 15h para não afetar o sono"
+    ],
+    "variations": [
+      "Adicione 1 gema de ovo cru para proteína",
+      "Substitua o mel por adoçante natural"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Shot Digestivo de Vinagre",
+    "category": "shots",
+    "image": "🍎",
+    "ingredients": [
+      "40ml de água filtrada",
+      "1 colher de sopa de vinagre de maçã orgânico",
+      "1 pitada de canela em pó",
+      "1 colher de chá de mel",
+      "3 gotas de limão"
+    ],
+    "benefits": ["digestão", "controle glicemia", "saciedade"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 18,
+    "macros": {
+      "protein": "0g",
+      "carbs": "4.5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Despeje a água em um copo pequeno",
+      "Adicione o vinagre de maçã",
+      "Polvilhe a canela",
+      "Adicione o mel e misture bem",
+      "Adicione as gotas de limão e beba"
+    ],
+    "tips": [
+      "Beba antes das principais refeições",
+      "Ajuda a controlar picos de insulina",
+      "Vinagre de maçã com mãe é mais eficaz"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de gengibre fresco ralado",
+      "Use mel de manuka para mais benefícios"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Shot de Azeite e Limão",
+    "category": "shots",
+    "image": "🫒",
+    "ingredients": [
+      "120ml de água morna",
+      "1 limão fresco",
+      "1 colher de sopa de azeite de oliva extra virgem",
+      "1 pitada de sal marinho",
+      "1 colher de chá de mel (opcional)"
+    ],
+    "benefits": ["limpeza hepática", "trânsito intestinal", "energia"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 120,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "3g",
+      "fat": "14g"
+    },
+    "instructions": [
+      "Aqueça a água até 40-50°C",
+      "Esprema o limão no copo",
+      "Adicione o azeite de oliva extra virgem",
+      "Adicione sal marinho",
+      "Misture bem e beba em jejum"
+    ],
+    "tips": [
+      "Melhor tomado logo ao acordar, em jejum",
+      "Azeite extra virgem tem mais polifenóis",
+      "Água morna facilita a absorção"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de gengibre fresco",
+      "Use limão siciliano para mais sabor"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Shot de Própolis e Mel",
+    "category": "shots",
+    "image": "🍯",
+    "ingredients": [
+      "20 gotas de própolis verde",
+      "1 colher de chá de mel puro",
+      "suco de meio limão fresco",
+      "50ml de água morna",
+      "1 pitada de gengibre em pó"
+    ],
+    "benefits": ["imunidade", "anti-inflamação", "garganta"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 25,
+    "macros": {
+      "protein": "0.3g",
+      "carbs": "6g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Despeje a água morna em um copo",
+      "Adicione o mel e misture",
+      "Adicione as gotas de própolis",
+      "Esprema o limão",
+      "Polvilhe o gengibre e beba"
+    ],
+    "tips": [
+      "Própolis verde é mais potente que vermelha",
+      "Ideal para prevenir resfriados",
+      "Ótimo para inflamação de garganta"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de cúrcuma",
+      "Use própolis vermelha se não tiver verde"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Shot Termogênico de Gengibre",
+    "category": "shots",
+    "image": "🔥",
+    "ingredients": [
+      "1 colher de café de gengibre em pó",
+      "50ml de água filtrada",
+      "1 limão fresco",
+      "1 pitada de canela em pó",
+      "1 pitada de pimenta preta",
+      "1 colher de chá de mel"
+    ],
+    "benefits": ["queima de gordura", "circulação", "energia"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 18,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "4.5g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Aqueça a água até 60°C",
+      "Adicione o gengibre em pó e misture",
+      "Adicione canela e pimenta preta",
+      "Esprema o limão",
+      "Adicione mel e beba imediatamente"
+    ],
+    "tips": [
+      "Gengibre fresco ralado é mais eficaz",
+      "Pimenta preta potencializa a absorção",
+      "Beba após refeições para melhor digestão"
+    ],
+    "variations": [
+      "Use gengibre fresco ralado ao invés de pó",
+      "Adicione 1 colher de café de guaraná"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Shot de Limão com Mel (Matinal)",
+    "category": "shots",
+    "image": "🌅",
+    "ingredients": [
+      "1 limão fresco grande",
+      "1 colher de chá de mel puro",
+      "100ml de água morna",
+      "1 pitada de sal marinho",
+      "1 colher de café de gengibre fresco ralado (opcional)"
+    ],
+    "benefits": ["digestão", "imunidade", "limpeza"],
+    "time": 2,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 20,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "5g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Aqueça a água até 40-50°C",
+      "Esprema o limão completamente",
+      "Despeje o suco na água",
+      "Adicione o mel e misture bem",
+      "Adicione sal marinho e beba em jejum"
+    ],
+    "tips": [
+      "Melhor tomado logo ao acordar",
+      "Água morna facilita a absorção",
+      "Limão fresco é muito mais eficaz que suco pronto"
+    ],
+    "variations": [
+      "Adicione gengibre fresco ralado",
+      "Use mel de manuka para mais benefícios"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Café Termogênico Cremoso",
+    "category": "cafés",
+    "image": "☕",
+    "ingredients": [
+      "1 xícara de café preto coado",
+      "1 colher de chá de óleo de coco",
+      "1 pitada de canela em pó",
+      "1 colher de chá de mel (opcional)",
+      "50ml de leite de amêndoa (opcional)"
+    ],
+    "benefits": ["saciedade", "queima de gordura", "energia"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 85,
+    "macros": {
+      "protein": "0.5g",
+      "carbs": "2g",
+      "fat": "9g"
+    },
+    "instructions": [
+      "Prepare o café coado",
+      "Despeje em um copo ou xícara",
+      "Adicione o óleo de coco",
+      "Polvilhe a canela",
+      "Misture bem com uma colher ou mixer até ficar cremoso"
+    ],
+    "tips": [
+      "Óleo de coco aumenta a saciedade",
+      "Ideal para café da manhã",
+      "Mixer manual cria mais cremosidade"
+    ],
+    "variations": [
+      "Adicione 1 colher de manteiga de amêndoa",
+      "Use óleo MCT ao invés de coco"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Pão de Banana de Frigideira",
+    "category": "cafés",
+    "image": "🍌",
+    "ingredients": [
+      "1 banana madura",
+      "2 colheres de sopa de farelo de aveia",
+      "1 ovo inteiro",
+      "1 pitada de sal",
+      "1 colher de café de canela",
+      "1 colher de chá de óleo de coco"
+    ],
+    "benefits": ["fibras", "saciedade", "energia"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 180,
+    "macros": {
+      "protein": "6g",
+      "carbs": "22g",
+      "fat": "7g"
+    },
+    "instructions": [
+      "Amasse a banana em uma tigela",
+      "Adicione o ovo e misture bem",
+      "Adicione o farelo de aveia, sal e canela",
+      "Misture até formar uma massa homogênea",
+      "Aqueça o óleo de coco em uma frigideira",
+      "Despeje a massa e cozinhe 3-4 min de cada lado"
+    ],
+    "tips": [
+      "Banana bem madura fica mais doce",
+      "Não deixe queimar a frigideira",
+      "Melhor servir quente com mel"
+    ],
+    "variations": [
+      "Adicione 1 colher de sopa de chocolate em pó",
+      "Use berries ao invés de banana"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Crepioca Milagrosa",
+    "category": "cafés",
+    "image": "🥞",
+    "ingredients": [
+      "1 ovo inteiro",
+      "2 colheres de sopa de goma de tapioca",
+      "1 colher de sopa de sementes de chia",
+      "1 colher de chá de mel",
+      "1 colher de chá de óleo de coco",
+      "1 pitada de sal"
+    ],
+    "benefits": ["proteína", "fibras", "baixo índice glicêmico"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 165,
+    "macros": {
+      "protein": "7g",
+      "carbs": "18g",
+      "fat": "7g"
+    },
+    "instructions": [
+      "Bata o ovo em uma tigela",
+      "Adicione a goma de tapioca e misture bem",
+      "Adicione a chia e o sal",
+      "Deixe repousar 2 minutos",
+      "Aqueça o óleo de coco na frigideira",
+      "Despeje a massa e cozinhe 2-3 min de cada lado"
+    ],
+    "tips": [
+      "Goma de tapioca cria textura crocante",
+      "Chia adiciona ômega-3 e fibras",
+      "Pode ser doce ou salgada"
+    ],
+    "variations": [
+      "Recheie com queijo branco e tomate",
+      "Adicione chocolate em pó para versão doce"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Cuscuz de Frigideira Rápido",
+    "category": "cafés",
+    "image": "🌾",
+    "ingredients": [
+      "1/2 xícara de flocão de milho hidratado",
+      "1 ovo",
+      "1 colher de sopa de leite",
+      "1 colher de chá de óleo de coco",
+      "sal e pimenta a gosto"
+    ],
+    "benefits": ["energia", "baixo índice glicêmico"],
+    "time": 7,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 155,
+    "macros": {
+      "protein": "5g",
+      "carbs": "20g",
+      "fat": "6g"
+    },
+    "instructions": [
+      "Misture o flocão com o leite",
+      "Deixe hidratar por 2 minutos",
+      "Bata o ovo separadamente",
+      "Aqueça o óleo de coco na frigideira",
+      "Despeje o flocão e cozinhe 2 min",
+      "Adicione o ovo batido e misture bem"
+    ],
+    "tips": [
+      "Flocão pré-hidratado cozinha mais rápido",
+      "Ideal para café da manhã rápido",
+      "Pode adicionar queijo ralado"
+    ],
+    "variations": [
+      "Adicione cebolinha e queijo",
+      "Use leite de coco para versão vegana"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Pão de Aveia com Sementes",
+    "category": "cafés",
+    "image": "🌱",
+    "ingredients": [
+      "2 ovos inteiros",
+      "3 colheres de sopa de farelo de aveia",
+      "2 colheres de sopa de sementes de girassol",
+      "1 colher de sopa de sementes de abóbora",
+      "1 colher de chá de óleo de coco",
+      "sal e pimenta a gosto"
+    ],
+    "benefits": ["emagrecimento", "fibras", "proteína"],
+    "time": 12,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 220,
+    "macros": {
+      "protein": "10g",
+      "carbs": "18g",
+      "fat": "12g"
+    },
+    "instructions": [
+      "Bata os ovos em uma tigela",
+      "Adicione a aveia e misture bem",
+      "Adicione as sementes e sal",
+      "Deixe repousar 3 minutos",
+      "Aqueça o óleo na frigideira",
+      "Despeje a massa e cozinhe 4-5 min de cada lado"
+    ],
+    "tips": [
+      "Sementes aumentam a saciedade",
+      "Aveia integral é melhor que refinada",
+      "Pode congelar para usar depois"
+    ],
+    "variations": [
+      "Adicione mel e canela para versão doce",
+      "Use sementes de linhaça ao invés de girassol"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Panqueca de Ovo com Aveia",
+    "category": "cafés",
+    "image": "🥞",
+    "ingredients": [
+      "2 ovos inteiros",
+      "2 colheres de sopa de aveia em flocos",
+      "1 colher de chá de canela em pó",
+      "1 colher de chá de mel",
+      "1 pitada de sal",
+      "1 colher de chá de óleo de coco"
+    ],
+    "benefits": ["proteína", "saciedade", "energia"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 190,
+    "macros": {
+      "protein": "9g",
+      "carbs": "16g",
+      "fat": "9g"
+    },
+    "instructions": [
+      "Bata os ovos em um liquidificador",
+      "Adicione a aveia e canela",
+      "Bata até ficar homogêneo",
+      "Deixe repousar 2 minutos",
+      "Aqueça o óleo de coco na frigideira",
+      "Despeje pequenas porções e cozinhe 2 min de cada lado"
+    ],
+    "tips": [
+      "Liquidificador cria textura mais macia",
+      "Canela reduz picos de insulina",
+      "Perfeita para café da manhã"
+    ],
+    "variations": [
+      "Adicione banana amassada",
+      "Use mel de manuka para mais benefícios"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bolo de Chocolate Saudável",
+    "category": "cafés",
+    "image": "🍫",
+    "ingredients": [
+      "3 ovos inteiros",
+      "3 colheres de sopa de cacau 100% em pó",
+      "2 colheres de sopa de óleo de coco",
+      "1 colher de sopa de adoçante natural",
+      "1 colher de chá de fermento em pó",
+      "1 pitada de sal"
+    ],
+    "benefits": ["satisfação de doce", "antioxidantes"],
+    "time": 20,
+    "difficulty": "médio",
+    "servings": 4,
+    "calories": 145,
+    "macros": {
+      "protein": "4g",
+      "carbs": "8g",
+      "fat": "10g"
+    },
+    "instructions": [
+      "Bata os ovos com o adoçante",
+      "Adicione o óleo de coco",
+      "Misture o cacau, fermento e sal",
+      "Despeje em forma untada",
+      "Asse a 180°C por 15-18 minutos",
+      "Deixe esfriar antes de servir"
+    ],
+    "tips": [
+      "Cacau 100% tem mais antioxidantes",
+      "Não adicione açúcar refinado",
+      "Ótimo para satisfazer vontade de doce"
+    ],
+    "variations": [
+      "Adicione abacate para mais cremosidade",
+      "Use banana ao invés de adoçante"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Torrada de Abacate com Ovo",
+    "category": "cafés",
+    "image": "🥑",
+    "ingredients": [
+      "1 abacate maduro",
+      "1 ovo",
+      "1 fatia de pão integral",
+      "sal e pimenta a gosto",
+      "1 colher de chá de azeite de oliva",
+      "suco de limão"
+    ],
+    "benefits": ["gorduras boas", "proteína", "saciedade"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 280,
+    "macros": {
+      "protein": "8g",
+      "carbs": "22g",
+      "fat": "18g"
+    },
+    "instructions": [
+      "Toste o pão integral",
+      "Corte o abacate ao meio e retire a polpa",
+      "Amasse o abacate na torrada",
+      "Regue com limão e azeite",
+      "Frite o ovo em uma frigideira",
+      "Coloque o ovo sobre o abacate"
+    ],
+    "tips": [
+      "Abacate bem maduro é mais cremoso",
+      "Limão evita oxidação do abacate",
+      "Ótimo para café da manhã completo"
+    ],
+    "variations": [
+      "Adicione tomate fatiado",
+      "Use pão de sementes ao invés de integral"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Chá de Alho e Canela (Seca Bucho)",
+    "category": "chás",
+    "image": "🧄",
+    "ingredients": [
+      "1 litro de água filtrada",
+      "4 dentes de alho com casca",
+      "2 paus de canela",
+      "1 colher de chá de mel (opcional)",
+      "suco de 1 limão"
+    ],
+    "benefits": ["desinflamação", "redução abdominal", "limpeza hepática"],
+    "time": 15,
+    "difficulty": "fácil",
+    "servings": 4,
+    "calories": 10,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "2.5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione o alho com casca",
+      "Adicione os paus de canela",
+      "Deixe fervir por 10 minutos",
+      "Coe e adicione limão",
+      "Beba 1 xícara 3x ao dia"
+    ],
+    "tips": [
+      "Alho com casca tem mais propriedades",
+      "Beba morno, não quente demais",
+      "Melhor tomar antes das refeições"
+    ],
+    "variations": [
+      "Adicione 1 colher de gengibre fresco ralado",
+      "Use canela em pó ao invés de pau"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Chá de Banana para Dormir",
+    "category": "chás",
+    "image": "🌙",
+    "ingredients": [
+      "1 banana madura com casca",
+      "1 litro de água filtrada",
+      "1 pau de canela",
+      "1 colher de chá de mel",
+      "1 pitada de gengibre em pó"
+    ],
+    "benefits": ["sono profundo", "controle de compulsão", "magnésio"],
+    "time": 15,
+    "difficulty": "fácil",
+    "servings": 2,
+    "calories": 45,
+    "macros": {
+      "protein": "0.5g",
+      "carbs": "11g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Corte a banana em rodelas com a casca",
+      "Leve a água para fervura",
+      "Adicione a banana e canela",
+      "Deixe fervir por 10 minutos",
+      "Coe e adicione mel e gengibre",
+      "Beba 30 minutos antes de dormir"
+    ],
+    "tips": [
+      "Banana com casca tem mais magnésio",
+      "Beba 30-60 minutos antes de dormir",
+      "Mel potencializa o efeito relaxante"
+    ],
+    "variations": [
+      "Adicione camomila para mais relaxamento",
+      "Use leite de coco ao invés de água"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Chá de Hibisco com Gengibre",
+    "category": "chás",
+    "image": "🌺",
+    "ingredients": [
+      "500ml de água filtrada",
+      "1 colher de sopa de hibisco seco",
+      "2 rodelas de gengibre fresco",
+      "1 colher de chá de mel",
+      "suco de 1/2 limão"
+    ],
+    "benefits": ["diurético", "metabolismo", "pressão arterial"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 15,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "3.5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione o hibisco e gengibre",
+      "Deixe em infusão por 5-7 minutos",
+      "Coe e adicione mel e limão",
+      "Beba morno ou gelado"
+    ],
+    "tips": [
+      "Hibisco tem antocianinas poderosas",
+      "Gengibre fresco é mais eficaz",
+      "Pode beber gelado no verão"
+    ],
+    "variations": [
+      "Adicione 1 colher de chá de gengibre em pó",
+      "Use adoçante ao invés de mel"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Chá de Mulungu com Camomila",
+    "category": "chás",
+    "image": "🌼",
+    "ingredients": [
+      "1 colher de mulungu",
+      "1 colher de camomila",
+      "250ml de água filtrada",
+      "1 colher de chá de mel",
+      "1 pitada de gengibre em pó"
+    ],
+    "benefits": ["ansiedade", "compulsão", "relaxamento"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 12,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "3g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione mulungu e camomila",
+      "Deixe em infusão por 5 minutos",
+      "Coe e adicione mel",
+      "Beba morno antes de situações de estresse"
+    ],
+    "tips": [
+      "Mulungu é calmante natural",
+      "Camomila potencializa o efeito",
+      "Ideal para ansiedade e compulsão"
+    ],
+    "variations": [
+      "Adicione 1 colher de passiflora",
+      "Use adoçante ao invés de mel"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Chá de Casca de Laranja (Noturno)",
+    "category": "chás",
+    "image": "🍊",
+    "ingredients": [
+      "500ml de água filtrada",
+      "casca de 1 laranja orgânica",
+      "1 colher de sopa de erva-doce",
+      "1 colher de chá de mel",
+      "1 pitada de canela em pó"
+    ],
+    "benefits": ["digestão", "sono", "desinflamação"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 18,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "4.5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Lave bem a laranja orgânica",
+      "Retire a casca com cuidado",
+      "Leve a água para fervura",
+      "Adicione a casca e erva-doce",
+      "Deixe em infusão por 5 minutos",
+      "Coe e adicione mel e canela"
+    ],
+    "tips": [
+      "Use laranja orgânica para evitar agrotóxicos",
+      "Casca tem mais flavonoides que a polpa",
+      "Perfeito para beber antes de dormir"
+    ],
+    "variations": [
+      "Adicione 1 colher de camomila",
+      "Use adoçante ao invés de mel"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Chá de Gengibre e Limão",
+    "category": "chás",
+    "image": "🫖",
+    "ingredients": [
+      "500ml de água filtrada",
+      "3 rodelas de gengibre fresco",
+      "1 limão fresco",
+      "1 colher de chá de mel",
+      "1 pitada de pimenta preta"
+    ],
+    "benefits": ["queima de gordura", "circulação", "imunidade"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 20,
+    "macros": {
+      "protein": "0.2g",
+      "carbs": "5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione o gengibre fresco",
+      "Deixe fervir por 5 minutos",
+      "Coe e esprema o limão",
+      "Adicione mel e pimenta preta",
+      "Beba morno"
+    ],
+    "tips": [
+      "Gengibre fresco é mais potente",
+      "Pimenta preta potencializa absorção",
+      "Ideal para acelerar metabolismo"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de cúrcuma",
+      "Use gengibre em pó se não tiver fresco"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Chá de Folhas de Siriguela",
+    "category": "chás",
+    "image": "🌿",
+    "ingredients": [
+      "2 colheres de sopa de folhas de siriguela fresca",
+      "1 xícara de água filtrada",
+      "1 colher de chá de mel",
+      "suco de 1/2 limão"
+    ],
+    "benefits": ["diurético", "desinchaço", "limpeza"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 12,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "3g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione as folhas de siriguela",
+      "Deixe em infusão por 3-5 minutos",
+      "Coe e adicione mel e limão",
+      "Beba morno"
+    ],
+    "tips": [
+      "Siriguela é diurético natural",
+      "Use folhas frescas para melhor efeito",
+      "Ideal para desinchaço"
+    ],
+    "variations": [
+      "Misture com hibisco para mais efeito",
+      "Beba gelado no verão"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Chá Verde com Limão",
+    "category": "chás",
+    "image": "💚",
+    "ingredients": [
+      "1 saquinho de chá verde",
+      "250ml de água filtrada",
+      "1 limão fresco",
+      "1 colher de chá de mel",
+      "1 pitada de gengibre em pó"
+    ],
+    "benefits": ["antioxidante", "metabolismo", "energia"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 8,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "2g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Aqueça a água a 70-80°C",
+      "Adicione o saquinho de chá verde",
+      "Deixe em infusão por 3-4 minutos",
+      "Retire o saquinho",
+      "Esprema o limão e adicione",
+      "Adicione mel e gengibre"
+    ],
+    "tips": [
+      "Água não muito quente preserva antioxidantes",
+      "Limão aumenta absorção de polifenóis",
+      "Ideal para antes de treinos"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de gengibre fresco",
+      "Use adoçante ao invés de mel"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Suco Limpa Fígado (Beterraba e Laranja)",
+    "category": "sucos",
+    "image": "🥕",
+    "ingredients": [
+      "1 beterraba média",
+      "suco de 2 laranjas frescas",
+      "1 cenoura pequena",
+      "1 colher de chá de mel",
+      "200ml de água filtrada"
+    ],
+    "benefits": ["circulação", "desintoxicação", "energia"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 85,
+    "macros": {
+      "protein": "1.5g",
+      "carbs": "20g",
+      "fat": "0.2g"
+    },
+    "instructions": [
+      "Lave bem a beterraba e cenoura",
+      "Corte em pedaços pequenos",
+      "Esprema as laranjas",
+      "Passe beterraba e cenoura no liquidificador",
+      "Adicione suco de laranja e água",
+      "Bata bem e beba imediatamente"
+    ],
+    "tips": [
+      "Beba imediatamente após fazer",
+      "Beterraba melhora circulação",
+      "Laranja adiciona vitamina C"
+    ],
+    "variations": [
+      "Adicione 1 colher de gengibre fresco",
+      "Use maçã ao invés de laranja"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Suco Detox Completo",
+    "category": "sucos",
+    "image": "🥗",
+    "ingredients": [
+      "1 cenoura média",
+      "1/2 beterraba",
+      "1 colher de gengibre fresco ralado",
+      "1 folha de couve",
+      "1 limão fresco",
+      "200ml de água filtrada"
+    ],
+    "benefits": ["intestino", "pele", "emagrecimento"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 65,
+    "macros": {
+      "protein": "1.2g",
+      "carbs": "15g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Lave bem todos os ingredientes",
+      "Corte em pedaços pequenos",
+      "Passe tudo no liquidificador",
+      "Adicione água filtrada",
+      "Bata bem até ficar homogêneo",
+      "Coe se preferir e beba imediatamente"
+    ],
+    "tips": [
+      "Gengibre fresco é mais potente",
+      "Couve crua tem mais nutrientes",
+      "Beba em jejum para melhor absorção"
+    ],
+    "variations": [
+      "Adicione maçã para adoçar",
+      "Use espinafre ao invés de couve"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Suco de Chuchu com Limão",
+    "category": "sucos",
+    "image": "🥒",
+    "ingredients": [
+      "1/2 chuchu cru",
+      "suco de 1 limão fresco",
+      "200ml de água filtrada",
+      "1 colher de chá de mel",
+      "1 pitada de sal marinho"
+    ],
+    "benefits": ["pressão arterial", "retenção de líquidos"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 28,
+    "macros": {
+      "protein": "0.5g",
+      "carbs": "6g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Descasque o chuchu",
+      "Corte em pedaços pequenos",
+      "Passe no liquidificador com água",
+      "Esprema o limão",
+      "Adicione mel e sal",
+      "Bata bem e beba imediatamente"
+    ],
+    "tips": [
+      "Chuchu cru tem mais nutrientes",
+      "Sal marinho ajuda na absorção",
+      "Ideal para quem tem pressão alta"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use água de coco ao invés de água"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Suco de Beterraba Pré-treino",
+    "category": "sucos",
+    "image": "💪",
+    "ingredients": [
+      "1 beterraba média",
+      "suco de 1 limão fresco",
+      "200ml de água filtrada",
+      "1 colher de chá de mel",
+      "1 colher de café de gengibre em pó"
+    ],
+    "benefits": ["circulação", "performance física", "energia"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 55,
+    "macros": {
+      "protein": "1g",
+      "carbs": "13g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Lave bem a beterraba",
+      "Corte em pedaços pequenos",
+      "Passe no liquidificador com água",
+      "Esprema o limão",
+      "Adicione mel e gengibre",
+      "Bata bem e beba 30 min antes do treino"
+    ],
+    "tips": [
+      "Beterraba melhora oxigenação",
+      "Beba 30-45 minutos antes do treino",
+      "Gengibre aumenta circulação"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de guaraná",
+      "Use cenoura junto com beterraba"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Suco Milagroso Pele (3 Ingredientes)",
+    "category": "sucos",
+    "image": "✨",
+    "ingredients": [
+      "1 cenoura média",
+      "1/2 beterraba",
+      "1 limão fresco",
+      "200ml de água filtrada"
+    ],
+    "benefits": ["pele", "intestino", "emagrecimento"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 48,
+    "macros": {
+      "protein": "0.8g",
+      "carbs": "11g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Lave bem cenoura e beterraba",
+      "Corte em pedaços pequenos",
+      "Passe no liquidificador com água",
+      "Esprema o limão",
+      "Bata bem até ficar homogêneo",
+      "Beba imediatamente"
+    ],
+    "tips": [
+      "Simples mas muito eficaz",
+      "Beba em jejum para melhor absorção",
+      "Resultados visíveis em 7 dias"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use maçã para adoçar"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Suco de Maçã com Couve",
+    "category": "sucos",
+    "image": "🍎",
+    "ingredients": [
+      "1 maçã com casca",
+      "1 folha de couve",
+      "1 limão fresco",
+      "200ml de água filtrada",
+      "1 colher de chá de mel"
+    ],
+    "benefits": ["fibras", "saciedade", "limpeza"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 72,
+    "macros": {
+      "protein": "0.9g",
+      "carbs": "17g",
+      "fat": "0.2g"
+    },
+    "instructions": [
+      "Lave bem maçã e couve",
+      "Corte a maçã em pedaços",
+      "Rasgue a couve",
+      "Passe no liquidificador com água",
+      "Esprema o limão",
+      "Adicione mel e bata bem"
+    ],
+    "tips": [
+      "Maçã com casca tem mais fibras",
+      "Couve crua é mais nutritiva",
+      "Ideal para café da manhã"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use espinafre ao invés de couve"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Suco de Água de Coco com Limão",
+    "category": "sucos",
+    "image": "🥥",
+    "ingredients": [
+      "200ml de água de coco natural",
+      "suco de 1 limão fresco",
+      "1 saquinho de chá verde",
+      "1 colher de chá de mel",
+      "100ml de água filtrada"
+    ],
+    "benefits": ["hidratação", "minerais", "detox"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 45,
+    "macros": {
+      "protein": "0.5g",
+      "carbs": "10g",
+      "fat": "0.2g"
+    },
+    "instructions": [
+      "Prepare o chá verde em água morna",
+      "Deixe esfriar um pouco",
+      "Adicione a água de coco",
+      "Esprema o limão",
+      "Adicione mel e misture bem",
+      "Beba morno ou gelado"
+    ],
+    "tips": [
+      "Água de coco natural é melhor",
+      "Chá verde adiciona antioxidantes",
+      "Perfeito para hidratação pós-treino"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use leite de coco ao invés de água"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Suco Seca Barriga",
+    "category": "sucos",
+    "image": "🔥",
+    "ingredients": [
+      "1 cenoura média",
+      "1/2 beterraba",
+      "1 colher de gengibre fresco ralado",
+      "1 limão fresco",
+      "200ml de água filtrada"
+    ],
+    "benefits": ["barriga", "intestino", "pele"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 62,
+    "macros": {
+      "protein": "1g",
+      "carbs": "14g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Lave bem cenoura e beterraba",
+      "Corte em pedaços pequenos",
+      "Ralhe o gengibre fresco",
+      "Passe tudo no liquidificador com água",
+      "Esprema o limão",
+      "Bata bem e beba imediatamente"
+    ],
+    "tips": [
+      "Gengibre fresco acelera metabolismo",
+      "Beba em jejum para melhor efeito",
+      "Beterraba melhora circulação"
+    ],
+    "variations": [
+      "Adicione 1 colher de café de cúrcuma",
+      "Use maçã para adoçar"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Água Detox Pepino e Hortelã",
+    "category": "água",
+    "image": "💧",
+    "ingredients": [
+      "1 litro de água filtrada",
+      "1/2 pepino fatiado com casca",
+      "1 limão fatiado",
+      "10 folhas de hortelã fresca",
+      "gelo (opcional)"
+    ],
+    "benefits": ["hidratação", "desinchaço", "refrescante"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 4,
+    "calories": 5,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "1g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Fatie o pepino com casca",
+      "Fatie o limão",
+      "Rasgue as folhas de hortelã",
+      "Adicione tudo em uma jarra com água",
+      "Deixe repousar por 2-4 horas na geladeira",
+      "Beba ao longo do dia"
+    ],
+    "tips": [
+      "Pepino com casca tem mais nutrientes",
+      "Deixe repousar mais tempo para mais sabor",
+      "Ideal para beber durante o dia"
+    ],
+    "variations": [
+      "Adicione gengibre fresco fatiado",
+      "Use melancia ao invés de pepino"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Água Detox de Limão",
+    "category": "água",
+    "image": "🍋",
+    "ingredients": [
+      "1 litro de água filtrada",
+      "1 limão fatiado com casca",
+      "10 folhas de hortelã fresca",
+      "1 colher de chá de mel",
+      "gelo (opcional)"
+    ],
+    "benefits": ["alcalinização", "desintoxicação"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 4,
+    "calories": 8,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "2g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Fatie o limão com casca",
+      "Rasgue as folhas de hortelã",
+      "Adicione em uma jarra com água",
+      "Adicione mel e misture",
+      "Deixe repousar por 2-4 horas",
+      "Beba ao longo do dia"
+    ],
+    "tips": [
+      "Limão com casca tem mais flavonoides",
+      "Mel adiciona propriedades antioxidantes",
+      "Perfeito para beber em jejum"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use limão siciliano para mais sabor"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Água Detox de Gengibre e Limão",
+    "category": "água",
+    "image": "🔥",
+    "ingredients": [
+      "1 litro de água filtrada",
+      "5 rodelas de gengibre fresco",
+      "1 limão fatiado",
+      "10 folhas de hortelã",
+      "gelo (opcional)"
+    ],
+    "benefits": ["queima de gordura", "circulação", "desinchaço"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 4,
+    "calories": 10,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "2.5g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Fatie o gengibre fresco",
+      "Fatie o limão",
+      "Rasgue as folhas de hortelã",
+      "Adicione tudo em uma jarra com água",
+      "Deixe repousar por 2-4 horas",
+      "Beba ao longo do dia"
+    ],
+    "tips": [
+      "Gengibre fresco é mais potente",
+      "Deixe repousar mais tempo para intensificar",
+      "Beba gelado no verão"
+    ],
+    "variations": [
+      "Adicione canela em pó",
+      "Use água de coco ao invés de água"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Abobrinha Recheada Emagrecedora",
+    "category": "refeições",
+    "image": "🥒",
+    "ingredients": [
+      "2 abobrinhas médias",
+      "300g de carne moída magra",
+      "1 cebola pequena picada",
+      "3 dentes de alho picados",
+      "1 colher de chá de cúrcuma",
+      "sal, pimenta e azeite"
+    ],
+    "benefits": ["baixo carboidrato", "saciedade", "nutrição"],
+    "time": 30,
+    "difficulty": "médio",
+    "servings": 2,
+    "calories": 220,
+    "macros": {
+      "protein": "28g",
+      "carbs": "8g",
+      "fat": "10g"
+    },
+    "instructions": [
+      "Corte as abobrinhas ao meio no sentido do comprimento",
+      "Retire a polpa com cuidado",
+      "Aqueça azeite em uma panela",
+      "Refogue cebola e alho",
+      "Adicione a carne moída e cozinhe",
+      "Adicione cúrcuma, sal e pimenta",
+      "Recheie as abobrinhas",
+      "Asse a 180°C por 20-25 minutos"
+    ],
+    "tips": [
+      "Carne magra reduz calorias",
+      "Cúrcuma adiciona propriedades anti-inflamação",
+      "Pode congelar para usar depois"
+    ],
+    "variations": [
+      "Use frango ao invés de carne",
+      "Adicione tomate picado"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Sopa Desintoxicante de Legumes",
+    "category": "refeições",
+    "image": "🍲",
+    "ingredients": [
+      "1 chuchu picado",
+      "1 abobrinha picada",
+      "1 xícara de vagem",
+      "1 cebola pequena",
+      "3 dentes de alho",
+      "200g de frango desfiado",
+      "1 litro de caldo caseiro",
+      "sal e pimenta"
+    ],
+    "benefits": ["nutrição", "baixa caloria", "saciedade"],
+    "time": 25,
+    "difficulty": "médio",
+    "servings": 3,
+    "calories": 145,
+    "macros": {
+      "protein": "18g",
+      "carbs": "12g",
+      "fat": "3g"
+    },
+    "instructions": [
+      "Aqueça o caldo em uma panela grande",
+      "Adicione cebola e alho",
+      "Adicione chuchu e abobrinha",
+      "Deixe cozinhar por 10 minutos",
+      "Adicione vagem e frango",
+      "Cozinhe por mais 10 minutos",
+      "Tempere com sal e pimenta"
+    ],
+    "tips": [
+      "Use caldo caseiro para mais nutrientes",
+      "Frango desfiado cozinha mais rápido",
+      "Perfeito para almoço leve"
+    ],
+    "variations": [
+      "Adicione cenoura",
+      "Use peixe ao invés de frango"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Sopa Emagrecedora (4kg em 2 semanas)",
+    "category": "refeições",
+    "image": "🥬",
+    "ingredients": [
+      "2 litros de caldo caseiro",
+      "4 xícaras de legumes verdes variados",
+      "300g de frango magro",
+      "1 cebola",
+      "4 dentes de alho",
+      "1 colher de chá de cúrcuma",
+      "sal e pimenta"
+    ],
+    "benefits": ["emagrecimento", "desinchaço", "nutrição"],
+    "time": 30,
+    "difficulty": "médio",
+    "servings": 4,
+    "calories": 135,
+    "macros": {
+      "protein": "20g",
+      "carbs": "10g",
+      "fat": "2g"
+    },
+    "instructions": [
+      "Leve o caldo para fervura",
+      "Adicione cebola e alho",
+      "Adicione frango em cubos",
+      "Cozinhe por 10 minutos",
+      "Adicione todos os legumes verdes",
+      "Adicione cúrcuma",
+      "Cozinhe por mais 15 minutos",
+      "Tempere e sirva"
+    ],
+    "tips": [
+      "Coma 1 prato como refeição principal",
+      "Legumes verdes têm poucas calorias",
+      "Frango magro é essencial"
+    ],
+    "variations": [
+      "Adicione peixe ao invés de frango",
+      "Use caldo de vegetais para versão vegetariana"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Omelete de Espinafre com Cúrcuma",
+    "category": "refeições",
+    "image": "🥚",
+    "ingredients": [
+      "2 ovos inteiros",
+      "1 xícara de espinafre fresco",
+      "1 colher de café de cúrcuma em pó",
+      "1 colher de chá de azeite de oliva",
+      "sal e pimenta a gosto"
+    ],
+    "benefits": ["proteína", "anti-inflamação", "energia"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 185,
+    "macros": {
+      "protein": "12g",
+      "carbs": "2g",
+      "fat": "14g"
+    },
+    "instructions": [
+      "Bata os ovos em uma tigela",
+      "Adicione cúrcuma, sal e pimenta",
+      "Aqueça o azeite em uma frigideira",
+      "Adicione o espinafre e refogue",
+      "Despeje os ovos batidos",
+      "Deixe cozinhar 2-3 minutos",
+      "Dobre ao meio e sirva"
+    ],
+    "tips": [
+      "Espinafre fresco é mais nutritivo",
+      "Cúrcuma adiciona propriedades anti-inflamação",
+      "Perfeito para café da manhã"
+    ],
+    "variations": [
+      "Adicione queijo branco",
+      "Use rúcula ao invés de espinafre"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Frango com Brócolis",
+    "category": "refeições",
+    "image": "🍗",
+    "ingredients": [
+      "200g de peito de frango magro",
+      "2 xícaras de brócolis fresco",
+      "3 dentes de alho picados",
+      "1 colher de sopa de azeite de oliva",
+      "sal, pimenta e limão"
+    ],
+    "benefits": ["proteína", "fibras", "saciedade"],
+    "time": 20,
+    "difficulty": "médio",
+    "servings": 1,
+    "calories": 280,
+    "macros": {
+      "protein": "35g",
+      "carbs": "15g",
+      "fat": "9g"
+    },
+    "instructions": [
+      "Corte o frango em cubos",
+      "Aqueça o azeite em uma frigideira",
+      "Refogue o alho",
+      "Adicione o frango e cozinhe",
+      "Adicione o brócolis",
+      "Cozinhe até o brócolis ficar al dente",
+      "Tempere com sal, pimenta e limão"
+    ],
+    "tips": [
+      "Frango magro tem menos gordura",
+      "Brócolis é rico em fibras",
+      "Perfeito para almoço ou jantar"
+    ],
+    "variations": [
+      "Adicione cenoura",
+      "Use peixe ao invés de frango"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Salada Verde com Abacate",
+    "category": "refeições",
+    "image": "🥗",
+    "ingredients": [
+      "2 xícaras de folhas verdes variadas",
+      "1 abacate maduro",
+      "1 tomate",
+      "1/4 de cebola roxa",
+      "2 colheres de sopa de azeite de oliva",
+      "suco de 1 limão",
+      "sal e pimenta"
+    ],
+    "benefits": ["gorduras boas", "vitaminas", "saciedade"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 245,
+    "macros": {
+      "protein": "3g",
+      "carbs": "12g",
+      "fat": "20g"
+    },
+    "instructions": [
+      "Lave bem as folhas verdes",
+      "Corte o tomate em cubos",
+      "Fatie a cebola roxa",
+      "Corte o abacate em fatias",
+      "Misture tudo em uma tigela",
+      "Tempere com azeite, limão, sal e pimenta"
+    ],
+    "tips": [
+      "Abacate bem maduro é mais cremoso",
+      "Azeite extra virgem é mais nutritivo",
+      "Coma imediatamente após preparar"
+    ],
+    "variations": [
+      "Adicione frango desfiado",
+      "Use gergelim ao invés de abacate"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Peixe Grelhado com Legumes",
+    "category": "refeições",
+    "image": "🐟",
+    "ingredients": [
+      "200g de peixe branco (tilápia ou merluza)",
+      "1 xícara de brócolis",
+      "1 abobrinha",
+      "1 cenoura",
+      "2 colheres de sopa de azeite de oliva",
+      "suco de 1 limão",
+      "sal, pimenta e alho"
+    ],
+    "benefits": ["ômega-3", "proteína", "nutrição"],
+    "time": 20,
+    "difficulty": "médio",
+    "servings": 1,
+    "calories": 310,
+    "macros": {
+      "protein": "38g",
+      "carbs": "18g",
+      "fat": "11g"
+    },
+    "instructions": [
+      "Tempere o peixe com sal, pimenta e alho",
+      "Grelhe o peixe por 4-5 min de cada lado",
+      "Corte os legumes em bastões",
+      "Grelhe os legumes",
+      "Regue com azeite e limão",
+      "Sirva quente"
+    ],
+    "tips": [
+      "Peixe branco é magro e nutritivo",
+      "Ômega-3 é essencial para saúde",
+      "Perfeito para jantar leve"
+    ],
+    "variations": [
+      "Use salmão para mais ômega-3",
+      "Asse ao invés de grelhar"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Creme de Chocolate de Abacate",
+    "category": "lanches",
+    "image": "🍫",
+    "ingredients": [
+      "1 abacate maduro",
+      "2 colheres de sopa de cacau 100% em pó",
+      "1 colher de sopa de adoçante natural",
+      "1 colher de sopa de castanhas picadas",
+      "100ml de leite de coco",
+      "1 pitada de sal"
+    ],
+    "benefits": ["satisfação de doce", "gorduras boas", "antioxidantes"],
+    "time": 8,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 280,
+    "macros": {
+      "protein": "4g",
+      "carbs": "12g",
+      "fat": "24g"
+    },
+    "instructions": [
+      "Corte o abacate ao meio",
+      "Retire a polpa com uma colher",
+      "Coloque em um liquidificador",
+      "Adicione cacau, adoçante e leite de coco",
+      "Bata até ficar cremoso",
+      "Sirva em uma tigela",
+      "Decore com castanhas"
+    ],
+    "tips": [
+      "Abacate cria cremosidade natural",
+      "Cacau 100% tem mais antioxidantes",
+      "Perfeito para satisfazer vontade de doce"
+    ],
+    "variations": [
+      "Adicione banana para mais doçura",
+      "Use amêndoas ao invés de castanhas"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Biscoito de Maizena Saudável",
+    "category": "lanches",
+    "image": "🍪",
+    "ingredients": [
+      "1 abacate maduro",
+      "1 xícara de farinha de aveia",
+      "2 colheres de sopa de manteiga vegetal",
+      "1 colher de sopa de adoçante natural",
+      "1 colher de chá de baunilha",
+      "1 pitada de sal"
+    ],
+    "benefits": ["snack saudável", "baixo índice glicêmico"],
+    "time": 15,
+    "difficulty": "médio",
+    "servings": 8,
+    "calories": 95,
+    "macros": {
+      "protein": "2g",
+      "carbs": "10g",
+      "fat": "5g"
+    },
+    "instructions": [
+      "Amasse o abacate bem",
+      "Misture com manteiga vegetal",
+      "Adicione farinha de aveia",
+      "Adicione adoçante, baunilha e sal",
+      "Forme pequenas bolinhas",
+      "Asse a 180°C por 12-15 minutos"
+    ],
+    "tips": [
+      "Abacate substitui gordura tradicional",
+      "Aveia integral é mais nutritiva",
+      "Pode congelar para usar depois"
+    ],
+    "variations": [
+      "Adicione chocolate em pó",
+      "Use coco ralado"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Pudim de Chia com Leite de Coco",
+    "category": "lanches",
+    "image": "🥛",
+    "ingredients": [
+      "2 colheres de sopa de sementes de chia",
+      "200ml de leite de coco",
+      "1 colher de chá de adoçante natural",
+      "1 colher de chá de baunilha",
+      "1 pitada de canela"
+    ],
+    "benefits": ["fibras", "ômega-3", "saciedade"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 180,
+    "macros": {
+      "protein": "3g",
+      "carbs": "12g",
+      "fat": "14g"
+    },
+    "instructions": [
+      "Misture chia com leite de coco",
+      "Adicione adoçante e baunilha",
+      "Misture bem",
+      "Deixe repousar na geladeira por 2-4 horas",
+      "Mexa antes de servir",
+      "Polvilhe canela"
+    ],
+    "tips": [
+      "Chia absorve líquido e fica gelatinosa",
+      "Leite de coco adiciona cremosidade",
+      "Perfeito para lanche da tarde"
+    ],
+    "variations": [
+      "Adicione frutas vermelhas",
+      "Use leite de amêndoa"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Barra de Castanhas e Mel",
+    "category": "lanches",
+    "image": "🍯",
+    "ingredients": [
+      "1 xícara de castanhas variadas",
+      "3 colheres de sopa de mel puro",
+      "2 colheres de sopa de coco ralado",
+      "1 colher de chá de baunilha",
+      "1 pitada de sal"
+    ],
+    "benefits": ["gorduras boas", "energia", "saciedade"],
+    "time": 15,
+    "difficulty": "médio",
+    "servings": 6,
+    "calories": 185,
+    "macros": {
+      "protein": "4g",
+      "carbs": "15g",
+      "fat": "13g"
+    },
+    "instructions": [
+      "Pique as castanhas",
+      "Misture com mel e coco ralado",
+      "Adicione baunilha e sal",
+      "Despeje em uma forma forrada",
+      "Deixe na geladeira por 2 horas",
+      "Corte em barras"
+    ],
+    "tips": [
+      "Castanhas têm gorduras boas",
+      "Mel adiciona energia",
+      "Pode congelar para usar depois"
+    ],
+    "variations": [
+      "Adicione chocolate em pó",
+      "Use frutas secas"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Iogurte Natural com Granola Caseira",
+    "category": "lanches",
+    "image": "🥣",
+    "ingredients": [
+      "150ml de iogurte natural",
+      "2 colheres de sopa de aveia em flocos",
+      "1 colher de sopa de mel",
+      "1 colher de sopa de castanhas picadas",
+      "1 colher de sopa de frutas secas",
+      "1 pitada de canela"
+    ],
+    "benefits": ["probióticos", "fibras", "proteína"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 220,
+    "macros": {
+      "protein": "7g",
+      "carbs": "28g",
+      "fat": "7g"
+    },
+    "instructions": [
+      "Despeje o iogurte em uma tigela",
+      "Misture aveia, mel e castanhas",
+      "Polvilhe sobre o iogurte",
+      "Adicione frutas secas",
+      "Polvilhe canela",
+      "Coma imediatamente"
+    ],
+    "tips": [
+      "Iogurte natural tem probióticos",
+      "Aveia adiciona fibras",
+      "Perfeito para café da manhã"
+    ],
+    "variations": [
+      "Adicione frutas frescas",
+      "Use mel de manuka"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Smoothie Verde Matinal",
+    "category": "sucos",
+    "image": "🥤",
+    "ingredients": [
+      "1 xícara de espinafre fresco",
+      "1 maçã com casca",
+      "1 banana",
+      "200ml de leite de coco",
+      "suco de 1 limão",
+      "1 colher de chá de mel"
+    ],
+    "benefits": ["vitaminas", "energia", "desintoxicação"],
+    "time": 5,
+    "difficulty": "fácil",
+    "servings": 1,
+    "calories": 185,
+    "macros": {
+      "protein": "2g",
+      "carbs": "38g",
+      "fat": "3g"
+    },
+    "instructions": [
+      "Coloque espinafre no liquidificador",
+      "Adicione maçã e banana",
+      "Adicione leite de coco",
+      "Esprema o limão",
+      "Adicione mel",
+      "Bata bem até ficar homogêneo",
+      "Beba imediatamente"
+    ],
+    "tips": [
+      "Beba imediatamente após fazer",
+      "Espinafre cru tem mais nutrientes",
+      "Perfeito para começar o dia"
+    ],
+    "variations": [
+      "Adicione gengibre fresco",
+      "Use abacate para mais cremosidade"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Chá Antigripe Poderoso",
+    "category": "chás",
+    "image": "🤧",
+    "ingredients": [
+      "600ml de água filtrada",
+      "3 rodelas de gengibre fresco",
+      "1 limão fresco",
+      "3 dentes de alho",
+      "1 pau de canela",
+      "3 cravos-da-índia",
+      "1 colher de chá de mel"
+    ],
+    "benefits": ["imunidade", "tosse", "resfriado", "dor muscular"],
+    "time": 15,
+    "difficulty": "fácil",
+    "servings": 2,
+    "calories": 25,
+    "macros": {
+      "protein": "0.3g",
+      "carbs": "6g",
+      "fat": "0.1g"
+    },
+    "instructions": [
+      "Leve a água para fervura",
+      "Adicione gengibre, alho, canela e cravo",
+      "Deixe fervir por 10 minutos",
+      "Coe e esprema o limão",
+      "Adicione mel",
+      "Beba morno 2-3x ao dia"
+    ],
+    "tips": [
+      "Gengibre fresco é mais potente",
+      "Alho tem propriedades antivirais",
+      "Ideal para prevenir resfriados"
+    ],
+    "variations": [
+      "Adicione própolis verde",
+      "Use mel de manuka"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Xarope Caseiro para Tosse",
+    "category": "lanches",
+    "image": "🍯",
+    "ingredients": [
+      "1 xícara de mel puro",
+      "3 colheres de sopa de gengibre fresco ralado",
+      "suco de 2 limões",
+      "3 dentes de alho picados",
+      "1 colher de chá de pimenta preta"
+    ],
+    "benefits": ["tosse seca", "nariz escorrendo", "imunidade"],
+    "time": 10,
+    "difficulty": "fácil",
+    "servings": 8,
+    "calories": 60,
+    "macros": {
+      "protein": "0.1g",
+      "carbs": "16g",
+      "fat": "0g"
+    },
+    "instructions": [
+      "Misture mel com gengibre ralado",
+      "Adicione suco de limão",
+      "Adicione alho picado",
+      "Adicione pimenta preta",
+      "Misture bem",
+      "Guarde em um pote de vidro",
+      "Tome 1 colher de sopa 3x ao dia"
+    ],
+    "tips": [
+      "Gengibre fresco é mais eficaz",
+      "Mel puro é essencial",
+      "Pode guardar na geladeira por 1 mês"
+    ],
+    "variations": [
+      "Adicione própolis verde",
+      "Use mel de manuka para mais benefícios"
+    ]
+  }
+]
