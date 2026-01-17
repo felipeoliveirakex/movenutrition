@@ -244,6 +244,11 @@ export default function Home() {
                     🧮 Calculadora
                   </a>
                 </Link>
+                <Link href="/dicas">
+                  <a className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.78_0.12_25)] hover:shadow-md transition-all">
+                    💚 Dicas de Saúde
+                  </a>
+                </Link>
               </div>
             </div>
             
