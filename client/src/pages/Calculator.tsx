@@ -171,7 +171,7 @@ export default function Calculator() {
                 </div>
                 <div>
                   <h1 className="text-xl font-display font-bold text-foreground">
-                    Wellness Hub
+                    Move Wellness
                   </h1>
                 </div>
               </a>

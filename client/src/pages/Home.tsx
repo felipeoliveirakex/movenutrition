@@ -151,7 +151,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-xl font-display font-bold text-foreground">
-                  Wellness Hub
+                  Move Wellness
                 </h1>
                 <p className="text-xs text-muted-foreground hidden sm:block">
                   Receitas para sua saúde
@@ -471,13 +471,13 @@ export default function Home() {
                 <Leaf className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="font-display font-bold">Wellness Diet Hub</h3>
+                <h3 className="font-display font-bold">Move Wellness</h3>
                 <p className="text-sm text-white/60">Sua jornada para uma vida mais saudável</p>
               </div>
             </div>
             
             <p className="text-sm text-white/60">
-              © 2025 Wellness Diet Hub. Todos os direitos reservados.
+              © 2025 Move Wellness. Todos os direitos reservados.
             </p>
           </div>
         </div>
