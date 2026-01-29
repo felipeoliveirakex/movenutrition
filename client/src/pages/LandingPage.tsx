@@ -57,11 +57,11 @@ export default function LandingPage() {
             {/* Left Content */}
             <div>
               <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-6">
-                Emagreça sem sacrificar comida
+                Viva melhor comendo bem
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                50+ receitas que funcionam. Sem dieta maluca. Sem restrição.
+                50+ receitas que transformam sua saúde, energia e autoestima. Sem culpa. Sem restrição.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -113,20 +113,20 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Receitas Rápidas",
-                desc: "Menos de 20 minutos. Sem complicação.",
+                title: "Mais Energia",
+                desc: "Acordar bem, produzir mais, viver melhor."
               },
               {
-                title: "Metabolismo Acelerado",
-                desc: "Ingredientes que aumentam seu metabolismo.",
+                title: "Saúde de Verdade",
+                desc: "Ingredientes naturais que seu corpo realmente precisa."
               },
               {
-                title: "Macros Calculados",
-                desc: "Cada receita vem com calorias e macros prontos.",
+                title: "Autoestima Elevada",
+                desc: "Se sentir bem com você mesmo, dentro e fora."
               },
               {
-                title: "Comida de Verdade",
-                desc: "Sem alimentos artificiais. Sem restrições extremas.",
+                title: "Sem Culpa",
+                desc: "Coma comida que você gosta sem se sentir mal."
               },
             ].map((benefit, idx) => (
               <div key={idx} className="bg-white p-8 rounded-lg border-l-4 border-[#7cb342]">
@@ -146,21 +146,21 @@ export default function LandingPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
+          {[
               {
                 step: "1",
                 title: "Crie sua conta",
-                desc: "Acesso instantâneo a 50+ receitas",
+                desc: "Acesso instantâneo a 50+ receitas"
               },
               {
                 step: "2",
                 title: "Escolha suas receitas",
-                desc: "Filtre por benefícios e preferências",
+                desc: "Filtre por benefícios e preferências"
               },
               {
                 step: "3",
-                title: "Comece a emagrecer",
-                desc: "Siga as receitas e veja os resultados",
+                title: "Transforme sua vida",
+                desc: "Sinta a diferença na energia, saúde e bem-estar"
               },
             ].map((item, idx) => (
               <div key={idx} className="text-center">
@@ -214,10 +214,10 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-black text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-5xl font-black mb-6">
-            Pronto para começar?
+            Pronto para viver melhor?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Acesso instantâneo a 50+ receitas. Sem cartão de crédito. Sem compromisso.
+            Comece sua jornada de saúde e bem-estar hoje. Sem cartão de crédito. Sem compromisso.
           </p>
           <Link href="/signup">
             <Button className="bg-white text-black hover:bg-gray-100 px-8 py-6 text-lg h-auto font-black">
