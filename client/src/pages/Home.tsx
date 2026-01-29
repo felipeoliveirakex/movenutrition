@@ -8,7 +8,7 @@
 */
 
 import { useState, useMemo, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -25,8 +25,11 @@ import {
   Apple,
   ChevronDown,
   X,
-  Filter
+  Filter,
+  LogOut,
+  User
 } from "lucide-react";
+import { useSupabaseAuth } from "@/hooks/useSupabaseAuth";
 import RecipeModal from "@/components/RecipeModal";
 import RecipeCard from "@/components/RecipeCard";
 import recipesData from "@/data/recipes-complete.json";
@@ -56,6 +59,9 @@ const CATEGORIES = [
 ];
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+  const { user, logout } = useSupabaseAuth();
+  
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedBenefits, setSelectedBenefits] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -159,14 +165,43 @@ export default function Home() {
               </div>
             </div>
             
-            {favorites.length > 0 && (
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-red-50 rounded-full">
-                <Heart className="w-4 h-4 fill-red-500 text-red-500" />
-                <span className="text-sm font-semibold text-red-600">
-                  {favorites.length}
-                </span>
-              </div>
-            )}
+            <div className="flex items-center gap-3">
+              {favorites.length > 0 && (
+                <div className="flex items-center gap-2 px-3 py-1.5 bg-red-50 rounded-full">
+                  <Heart className="w-4 h-4 fill-red-500 text-red-500" />
+                  <span className="text-sm font-semibold text-red-600">
+                    {favorites.length}
+                  </span>
+                </div>
+              )}
+              
+              {user ? (
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 px-3 py-1.5 bg-[oklch(0.50_0.10_145)]/10 rounded-full">
+                    <User className="w-4 h-4 text-[oklch(0.50_0.10_145)]" />
+                    <span className="text-sm font-medium text-[oklch(0.50_0.10_145)]">
+                      {user.email?.split("@")[0]}
+                    </span>
+                  </div>
+                  <button
+                    onClick={async () => {
+                      await logout();
+                      setLocation("/login");
+                    }}
+                    className="p-2 hover:bg-red-50 rounded-lg transition-colors"
+                    title="Logout"
+                  >
+                    <LogOut className="w-4 h-4 text-red-600" />
+                  </button>
+                </div>
+              ) : (
+                <Link href="/login">
+                  <Button size="sm" className="bg-[oklch(0.50_0.10_145)] hover:bg-[oklch(0.48_0.10_145)]">
+                    Entrar
+                  </Button>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </header>

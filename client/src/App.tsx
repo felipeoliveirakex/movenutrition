@@ -8,11 +8,15 @@ import Home from "./pages/Home";
 import MealPlan from "./pages/MealPlan";
 import Calculator from "./pages/Calculator";
 import HealthTips from "./pages/HealthTips";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
       <Route path="/plano" component={MealPlan} />
       <Route path="/calculadora" component={Calculator} />
       <Route path="/dicas" component={HealthTips} />
