@@ -57,9 +57,7 @@ export default function LandingPage() {
             {/* Left Content */}
             <div>
               <h1 className="text-6xl lg:text-7xl font-black leading-tight mb-6">
-                Emagreça<br />
-                <span className="text-[#7cb342]">sem sacrificar</span><br />
-                comida
+                Emagreça sem sacrificar comida
               </h1>
               
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
