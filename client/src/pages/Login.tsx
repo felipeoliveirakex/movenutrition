@@ -29,7 +29,7 @@ export default function Login() {
         setError(error.message);
       } else if (data.user) {
         setMessage("Login realizado com sucesso!");
-        setTimeout(() => setLocation("/"), 1500);
+        setTimeout(() => setLocation("/membros"), 1500);
       }
     } catch (err) {
       setError("Erro ao fazer login. Tente novamente.");

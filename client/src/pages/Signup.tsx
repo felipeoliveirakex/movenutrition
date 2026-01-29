@@ -50,7 +50,7 @@ export default function Signup() {
         setError(error.message);
       } else if (data.user) {
         setMessage("Conta criada com sucesso! Redirecionando...");
-        setTimeout(() => setLocation("/"), 1500);
+        setTimeout(() => setLocation("/membros"), 1500);
       }
     } catch (err) {
       setError("Erro ao criar conta. Tente novamente.");
