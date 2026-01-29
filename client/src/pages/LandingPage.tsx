@@ -41,7 +41,7 @@ export default function LandingPage() {
       {/* PROMOTIONAL BANNER - Subtle Stripe */}
       <div className="bg-white border-b-4 border-[#7cb342] py-3 px-4 text-center sticky top-0 z-50">
         <p className="text-sm font-semibold text-black uppercase tracking-wider">
-          🎯 Comece hoje: Acesso gratuito para clientes + Plano pago disponível
+          🎯 Acesso Gratuito para Clientes + Plano Pago Disponível
         </p>
       </div>
 
@@ -49,25 +49,18 @@ export default function LandingPage() {
       <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-white relative">
         <div className="max-w-5xl mx-auto text-center">
           {/* Logo */}
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center">
-              <Leaf className="w-8 h-8 text-white" />
-            </div>
-            <span className="text-3xl font-bold text-black">
-              MOVE<span className="text-[#7cb342]">.</span>WELLNESS
-            </span>
-          </div>
+          <img src="/images/move-wellness-logo.png" alt="Move Wellness" className="h-16 mb-8 mx-auto" />
 
           {/* Main Headline */}
           <h1 className="text-6xl md:text-7xl font-black text-black mb-6 leading-tight">
             Emagreça<br />
             <span className="text-[#7cb342]">Sem Sacrificar</span><br />
-            o Sabor
+            Comida
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-            As mesmas receitas que milhares de pessoas usaram para perder peso enquanto comem comida de verdade.
+            50+ receitas que funcionam. Sem dieta maluca. Sem restrição.
           </p>
 
           {/* CTA Buttons */}
@@ -121,26 +114,24 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-5xl font-black text-black mb-16 text-center">
-            Por Que Move Wellness<br />
-            <span className="text-[#7cb342]">Funciona</span>
+            Por Que Move Wellness Funciona
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
+            {[              {
                 icon: Zap,
                 title: "Receitas Rápidas",
-                desc: "Menos de 20 minutos. Sem complicação. Sem desculpas."
+                desc: "Menos de 20 minutos. Sem complicação."
               },
               {
                 icon: Flame,
                 title: "Metabolismo Acelerado",
-                desc: "Ingredientes que aumentam seu metabolismo naturalmente."
+                desc: "Ingredientes que aumentam seu metabolismo."
               },
               {
                 icon: CheckCircle,
                 title: "Macros Calculados",
-                desc: "Cada receita vem com calorias e macros já prontos."
+                desc: "Cada receita vem com calorias e macros prontos."
               },
               {
                 icon: Leaf,
@@ -190,8 +181,7 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-5xl font-black text-black mb-16 text-center">
-            Perguntas<br />
-            <span className="text-[#7cb342]">Frequentes</span>
+            Perguntas Frequentes
           </h2>
 
           <div className="space-y-4">
