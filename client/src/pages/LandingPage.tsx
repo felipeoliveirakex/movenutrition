@@ -57,12 +57,12 @@ export default function LandingPage() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-6xl font-bold text-[oklch(0.30_0.05_145)] mb-6 leading-tight">
-            Como Emagrecer Sem Abrir Mão do Sabor
+            Como Emagrecer Sem Abrir Mão do Sabor...
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-[oklch(0.50_0.05_145)] mb-8 leading-relaxed">
-            Descobrindo as receitas que seus clientes já estão usando para perder peso enquanto comem bem
+            Usando as mesmas receitas que milhares de pessoas já usaram para perder peso
           </p>
 
           {/* CTA Button */}
@@ -88,7 +88,7 @@ export default function LandingPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-[oklch(0.30_0.05_145)] mb-8 text-center">
-            A Verdade Que Ninguém Te Conta Sobre Dietas...
+            Espera... Você Realmente Acredita Que Vai Emagrecer Comendo Comida Ruim?
           </h2>
 
           <div className="space-y-6 text-lg text-[oklch(0.50_0.05_145)] leading-relaxed">
