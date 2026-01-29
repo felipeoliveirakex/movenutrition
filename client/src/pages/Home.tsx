@@ -270,19 +270,19 @@ export default function Home() {
               {/* Quick Actions */}
               <div className="flex flex-wrap gap-3 pt-2">
                 <Link href="/plano">
-                  <a className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.50_0.10_145)] hover:shadow-md transition-all">
+                  <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.50_0.10_145)] hover:shadow-md transition-all cursor-pointer">
                     📅 Plano Alimentar
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/calculadora">
-                  <a className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.72_0.10_55)] hover:shadow-md transition-all">
+                  <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.72_0.10_55)] hover:shadow-md transition-all cursor-pointer">
                     🧮 Calculadora
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/dicas">
-                  <a className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.78_0.12_25)] hover:shadow-md transition-all">
+                  <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-white rounded-full text-sm font-medium text-[oklch(0.78_0.12_25)] hover:shadow-md transition-all cursor-pointer">
                     💚 Dicas de Saúde
-                  </a>
+                  </div>
                 </Link>
               </div>
             </div>

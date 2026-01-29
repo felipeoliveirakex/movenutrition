@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Leaf, Mail, Lock, Chrome } from "lucide-react";
-import { useLocation } from "wouter";
+import { Leaf, Mail, Lock, Chrome, ArrowLeft } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
 export default function Login() {
@@ -62,6 +62,16 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[oklch(0.98_0.02_145)] to-[oklch(0.95_0.03_145)] flex items-center justify-center p-4">
+      {/* Back Button */}
+      <button
+        onClick={() => setLocation("/")}
+        className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 text-[oklch(0.50_0.10_145)] hover:bg-white/50 rounded-lg transition-colors"
+        title="Voltar à página principal"
+      >
+        <ArrowLeft className="w-4 h-4" />
+        <span className="text-sm font-medium hidden sm:inline">Voltar</span>
+      </button>
+
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
