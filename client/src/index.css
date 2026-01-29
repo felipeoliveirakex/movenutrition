@@ -4,16 +4,16 @@
 @custom-variant dark (&:is(.dark *));
 
 /* 
-  Design: Organic Minimalism
-  - Verde Sage como cor primária (saúde, natureza)
-  - Terracota como secundária (calor, nutrição)
-  - Coral como accent (energia, vitalidade)
-  - Background creme quente (pureza)
-  - Formas orgânicas e suaves
+  Design: Centr-Inspired Fitness
+  - Preto profundo como background
+  - Verde neon (#00ff00) como accent
+  - Branco puro para texto
+  - Design agressivo e energético
+  - Foco em contraste e impacto visual
 */
 
 @theme inline {
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-display: "Playfair Display", Georgia, serif;
   --font-accent: "Caveat", cursive;
   
@@ -45,94 +45,57 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-  
-  /* Custom colors for wellness theme */
-  --color-sage: oklch(0.55 0.08 145);
-  --color-sage-light: oklch(0.85 0.05 145);
-  --color-terracotta: oklch(0.72 0.10 55);
-  --color-terracotta-light: oklch(0.90 0.05 55);
-  --color-coral: oklch(0.78 0.12 25);
-  --color-cream: oklch(0.98 0.01 90);
-  --color-brown: oklch(0.30 0.03 55);
 }
 
 :root {
-  --primary: oklch(0.50 0.10 145);
-  --primary-foreground: oklch(0.98 0.01 90);
-  --sidebar-primary: oklch(0.50 0.10 145);
-  --sidebar-primary-foreground: oklch(0.98 0.01 90);
-  --chart-1: oklch(0.55 0.08 145);
-  --chart-2: oklch(0.72 0.10 55);
-  --chart-3: oklch(0.78 0.12 25);
-  --chart-4: oklch(0.65 0.06 145);
-  --chart-5: oklch(0.60 0.08 55);
-  --radius: 1rem;
-  --background: oklch(0.98 0.008 85);
-  --foreground: oklch(0.25 0.03 55);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.03 55);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.03 55);
-  --secondary: oklch(0.92 0.02 145);
-  --secondary-foreground: oklch(0.35 0.05 145);
-  --muted: oklch(0.94 0.01 85);
-  --muted-foreground: oklch(0.50 0.02 55);
-  --accent: oklch(0.78 0.12 25);
-  --accent-foreground: oklch(0.20 0.03 25);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.88 0.02 85);
-  --input: oklch(0.92 0.01 85);
-  --ring: oklch(0.50 0.10 145);
-  --sidebar: oklch(0.96 0.01 85);
-  --sidebar-foreground: oklch(0.25 0.03 55);
-  --sidebar-accent: oklch(0.92 0.02 145);
-  --sidebar-accent-foreground: oklch(0.25 0.03 55);
-  --sidebar-border: oklch(0.88 0.02 85);
-  --sidebar-ring: oklch(0.50 0.10 145);
+  /* Centr Color Palette */
+  --primary: #00ff00;
+  --primary-foreground: #000000;
+  --chart-1: #00ff00;
+  --chart-2: #ff0000;
+  --chart-3: #00ccff;
+  --chart-4: #ffff00;
+  --chart-5: #ff00ff;
+  --radius: 0.5rem;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --secondary: #333333;
+  --secondary-foreground: #ffffff;
+  --muted: #333333;
+  --muted-foreground: #888888;
+  --accent: #00ff00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input: #1a1a1a;
+  --ring: #00ff00;
 }
 
 .dark {
-  --primary: oklch(0.60 0.10 145);
-  --primary-foreground: oklch(0.15 0.02 145);
-  --sidebar-primary: oklch(0.60 0.10 145);
-  --sidebar-primary-foreground: oklch(0.15 0.02 145);
-  --background: oklch(0.18 0.02 55);
-  --foreground: oklch(0.92 0.01 85);
-  --card: oklch(0.22 0.02 55);
-  --card-foreground: oklch(0.92 0.01 85);
-  --popover: oklch(0.22 0.02 55);
-  --popover-foreground: oklch(0.92 0.01 85);
-  --secondary: oklch(0.28 0.03 145);
-  --secondary-foreground: oklch(0.85 0.03 145);
-  --muted: oklch(0.25 0.02 55);
-  --muted-foreground: oklch(0.65 0.02 85);
-  --accent: oklch(0.65 0.10 25);
-  --accent-foreground: oklch(0.95 0.01 25);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.30 0.02 55);
-  --input: oklch(0.28 0.02 55);
-  --ring: oklch(0.60 0.10 145);
-  --chart-1: oklch(0.65 0.08 145);
-  --chart-2: oklch(0.72 0.10 55);
-  --chart-3: oklch(0.70 0.10 25);
-  --chart-4: oklch(0.55 0.06 145);
-  --chart-5: oklch(0.50 0.08 55);
-  --sidebar: oklch(0.20 0.02 55);
-  --sidebar-foreground: oklch(0.92 0.01 85);
-  --sidebar-accent: oklch(0.28 0.03 145);
-  --sidebar-accent-foreground: oklch(0.92 0.01 85);
-  --sidebar-border: oklch(0.30 0.02 55);
-  --sidebar-ring: oklch(0.60 0.10 145);
+  --primary: #00ff00;
+  --primary-foreground: #000000;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --secondary: #333333;
+  --secondary-foreground: #ffffff;
+  --muted: #333333;
+  --muted-foreground: #888888;
+  --accent: #00ff00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input: #1a1a1a;
+  --ring: #00ff00;
 }
 
 @layer base {
@@ -144,6 +107,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -187,24 +151,30 @@
     }
   }
   
-  /* Organic shapes and decorative elements */
-  .blob-shape {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  /* Neon glow effect */
+  .neon-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
   }
   
-  .wave-divider {
-    position: relative;
+  .neon-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
   }
   
-  .wave-divider::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100'%3E%3Cpath fill='%23FBF8F4' d='M0,50 C360,100 720,0 1080,50 C1260,75 1380,25 1440,50 L1440,100 L0,100 Z'/%3E%3C/svg%3E") no-repeat center;
-    background-size: cover;
+  /* Aggressive button style */
+  .btn-aggressive {
+    background: #1a1a1a;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-aggressive:hover {
+    background: #00ff00;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
   }
   
   /* Card hover effects */
@@ -214,30 +184,15 @@
   
   .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px -12px oklch(0.50 0.10 145 / 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, oklch(0.50 0.10 145), oklch(0.72 0.10 55));
+    background: linear-gradient(135deg, #00ff00, #00ccff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-  }
-  
-  /* Organic button style */
-  .btn-organic {
-    border-radius: 50px;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-organic:hover {
-    border-radius: 20px;
-  }
-  
-  /* Accent font */
-  .font-accent {
-    font-family: "Caveat", cursive;
   }
   
   /* Display font */
@@ -257,14 +212,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: oklch(0.94 0.01 85);
+  background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.50 0.10 145 / 0.4);
+  background: #00ff00;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.50 0.10 145 / 0.6);
+  background: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
 }
