@@ -4,12 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /* 
-  Design: Centr-Inspired Fitness
-  - Preto profundo como background
-  - Verde neon (#00ff00) como accent
-  - Branco puro para texto
-  - Design agressivo e energético
-  - Foco em contraste e impacto visual
+  Design: Centr-Inspired but Elegant
+  - Branco como cor principal (background e texto)
+  - Preto em segundo (cards, seções)
+  - Faixas de cor discretas (verde/amarelo claro como accent)
+  - Design limpo, minimalista, profissional
 */
 
 @theme inline {
@@ -48,54 +47,54 @@
 }
 
 :root {
-  /* Centr Color Palette */
-  --primary: #00ff00;
-  --primary-foreground: #000000;
-  --chart-1: #00ff00;
-  --chart-2: #ff0000;
-  --chart-3: #00ccff;
-  --chart-4: #ffff00;
-  --chart-5: #ff00ff;
+  /* Elegant White/Black with Subtle Accents */
+  --primary: #1a1a1a;
+  --primary-foreground: #ffffff;
+  --chart-1: #7cb342;
+  --chart-2: #fbc02d;
+  --chart-3: #1a1a1a;
+  --chart-4: #e8e8e8;
+  --chart-5: #d0d0d0;
   --radius: 0.5rem;
-  --background: #0a0a0a;
-  --foreground: #ffffff;
-  --card: #1a1a1a;
-  --card-foreground: #ffffff;
-  --popover: #1a1a1a;
-  --popover-foreground: #ffffff;
-  --secondary: #333333;
-  --secondary-foreground: #ffffff;
-  --muted: #333333;
-  --muted-foreground: #888888;
-  --accent: #00ff00;
-  --accent-foreground: #000000;
-  --destructive: #ff0000;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #f5f5f5;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --secondary: #f0f0f0;
+  --secondary-foreground: #1a1a1a;
+  --muted: #e0e0e0;
+  --muted-foreground: #666666;
+  --accent: #7cb342;
+  --accent-foreground: #1a1a1a;
+  --destructive: #d32f2f;
   --destructive-foreground: #ffffff;
-  --border: #333333;
-  --input: #1a1a1a;
-  --ring: #00ff00;
+  --border: #e0e0e0;
+  --input: #f5f5f5;
+  --ring: #7cb342;
 }
 
 .dark {
-  --primary: #00ff00;
-  --primary-foreground: #000000;
-  --background: #0a0a0a;
+  --primary: #ffffff;
+  --primary-foreground: #1a1a1a;
+  --background: #1a1a1a;
   --foreground: #ffffff;
-  --card: #1a1a1a;
+  --card: #2a2a2a;
   --card-foreground: #ffffff;
-  --popover: #1a1a1a;
+  --popover: #2a2a2a;
   --popover-foreground: #ffffff;
   --secondary: #333333;
   --secondary-foreground: #ffffff;
-  --muted: #333333;
-  --muted-foreground: #888888;
-  --accent: #00ff00;
-  --accent-foreground: #000000;
-  --destructive: #ff0000;
-  --destructive-foreground: #ffffff;
+  --muted: #555555;
+  --muted-foreground: #aaaaaa;
+  --accent: #7cb342;
+  --accent-foreground: #ffffff;
+  --destructive: #ff6b6b;
+  --destructive-foreground: #1a1a1a;
   --border: #333333;
-  --input: #1a1a1a;
-  --ring: #00ff00;
+  --input: #2a2a2a;
+  --ring: #7cb342;
 }
 
 @layer base {
@@ -151,30 +150,38 @@
     }
   }
   
-  /* Neon glow effect */
-  .neon-glow {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  /* Subtle accent stripe */
+  .accent-stripe {
+    border-left: 4px solid #7cb342;
   }
   
-  .neon-glow:hover {
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-  }
-  
-  /* Aggressive button style */
-  .btn-aggressive {
+  /* Elegant button style */
+  .btn-elegant {
     background: #1a1a1a;
-    border: 2px solid #00ff00;
-    color: #00ff00;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #1a1a1a;
+  }
+  
+  .btn-elegant:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+  }
+  
+  /* Subtle accent button */
+  .btn-accent {
+    background: transparent;
+    color: #7cb342;
+    border: 2px solid #7cb342;
+    font-weight: 600;
     transition: all 0.3s ease;
   }
   
-  .btn-aggressive:hover {
-    background: #00ff00;
-    color: #000000;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  .btn-accent:hover {
+    background: #7cb342;
+    color: #ffffff;
   }
   
   /* Card hover effects */
@@ -183,13 +190,13 @@
   }
   
   .card-hover:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, #00ff00, #00ccff);
+    background: linear-gradient(135deg, #1a1a1a, #7cb342);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -212,15 +219,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00ff00;
+  background: #7cb342;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00ff00;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+  background: #689f38;
 }
