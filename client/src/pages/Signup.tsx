@@ -89,7 +89,7 @@ export default function Signup() {
             </div>
           )}
 
-          {/* Signup Form */}
+          {/* Signup Form - Google OAuth será adicionado após configuração */}
           <form onSubmit={handleSignup} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-[oklch(0.30_0.05_145)] mb-2">

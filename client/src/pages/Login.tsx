@@ -147,16 +147,21 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Google Login */}
-          <Button
-            onClick={handleGoogleLogin}
-            disabled={loading}
-            variant="outline"
-            className="w-full h-11 border-[oklch(0.90_0.02_145)] hover:bg-[oklch(0.98_0.02_145)]"
-          >
-            <Chrome className="w-5 h-5 mr-2" />
-            Entrar com Google
-          </Button>
+          {/* Google Login - Desativado temporariamente */}
+          <div className="relative">
+            <Button
+              onClick={handleGoogleLogin}
+              disabled={true}
+              variant="outline"
+              className="w-full h-11 border-[oklch(0.90_0.02_145)] hover:bg-[oklch(0.98_0.02_145)] opacity-50 cursor-not-allowed"
+            >
+              <Chrome className="w-5 h-5 mr-2" />
+              Entrar com Google (em breve)
+            </Button>
+            <p className="text-xs text-[oklch(0.50_0.05_145)] text-center mt-2">
+              Google OAuth será habilitado em breve
+            </p>
+          </div>
 
           {/* Sign Up Link */}
           <p className="text-center text-sm text-[oklch(0.50_0.05_145)]">
