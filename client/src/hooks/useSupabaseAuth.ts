@@ -13,12 +13,27 @@ export function useSupabaseAuth() {
       try {
         const { data, error } = await supabase.auth.getSession();
         if (error) {
-          setError(error.message);
+          // Handle refresh token errors gracefully
+          if (error.message.includes("Refresh Token")) {
+            await supabase.auth.signOut();
+            setUser(null);
+            setError(null);
+          } else {
+            setError(error.message);
+          }
         } else {
           setUser(data.session?.user ?? null);
+          setError(null);
         }
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Unknown error");
+        const errorMsg = err instanceof Error ? err.message : "Unknown error";
+        if (errorMsg.includes("Refresh Token")) {
+          await supabase.auth.signOut();
+          setUser(null);
+          setError(null);
+        } else {
+          setError(errorMsg);
+        }
       } finally {
         setLoading(false);
       }
@@ -31,6 +46,7 @@ export function useSupabaseAuth() {
       (event, session) => {
         setUser(session?.user ?? null);
         setLoading(false);
+        setError(null);
       }
     );
 
@@ -46,6 +62,7 @@ export function useSupabaseAuth() {
         setError(error.message);
       } else {
         setUser(null);
+        setError(null);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Unknown error");
