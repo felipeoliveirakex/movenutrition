@@ -90,6 +90,7 @@ function HomeContent() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedBenefits, setSelectedBenefits] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedDifficulty, setSelectedDifficulty] = useState<string | null>(null);
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [favorites, setFavorites] = useState<number[]>([]);
   const [showFilters, setShowFilters] = useState(false);
@@ -131,10 +132,13 @@ function HomeContent() {
           recipe.benefits.includes(benefit)
         );
 
+      const matchesDifficulty =
+        !selectedDifficulty || recipe.difficulty === selectedDifficulty;
+
       const matchesCategory =
         !selectedCategory || recipe.category === selectedCategory;
 
-      return matchesSearch && matchesBenefits && matchesCategory;
+      return matchesSearch && matchesBenefits && matchesCategory && matchesDifficulty;
     });
   }, [searchTerm, selectedBenefits, selectedCategory]);
 
