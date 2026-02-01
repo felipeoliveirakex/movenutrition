@@ -159,21 +159,20 @@ export default function Calculator() {
   const isFormValid = age && weight && height;
 
   return (
-    <div className="min-h-screen bg-[oklch(0.98_0.008_85)]">
+    <div className="min-h-screen bg-white">
+      {/* Green Header Bar */}
+      <div className="h-2 bg-[#7cb342]"></div>
+
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-lg shadow-sm">
-        <div className="container py-4">
+      <header className="sticky top-0 z-50 bg-white border-b-2 border-black">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/">
+            <Link href="/membros">
               <a className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-[oklch(0.50_0.10_145)] to-[oklch(0.60_0.08_145)] rounded-2xl flex items-center justify-center shadow-lg shadow-[oklch(0.50_0.10_145)]/20">
+                <div className="w-10 h-10 bg-[#7cb342] rounded-lg flex items-center justify-center">
                   <Leaf className="w-5 h-5 text-white" />
                 </div>
-                <div>
-                  <h1 className="text-xl font-display font-bold text-foreground">
-                    Move Wellness
-                  </h1>
-                </div>
+                <span className="font-bold text-black">Move Wellness</span>
               </a>
             </Link>
           </div>
@@ -181,17 +180,17 @@ export default function Calculator() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[oklch(0.90_0.05_55)] to-[oklch(0.96_0.01_85)] py-12">
-        <div className="container">
+      <section className="bg-green-50 border-b-2 border-[#7cb342]/20 py-12">
+        <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
-            <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-lg">
-              <CalcIcon className="w-7 h-7 text-[oklch(0.72_0.10_55)]" />
+            <div className="w-14 h-14 bg-white border-2 border-black rounded-lg flex items-center justify-center">
+              <CalcIcon className="w-7 h-7 text-[#7cb342]" />
             </div>
             <div>
-              <h2 className="text-3xl font-display font-bold text-foreground">
+              <h2 className="text-3xl font-bold text-black">
                 Calculadora de Calorias
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-gray-700">
                 Descubra suas necessidades nutricionais diárias
               </p>
             </div>

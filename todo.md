@@ -85,3 +85,13 @@
 - [x] Remover testes de pagamento
 - [x] Limpar imports não utilizados
 - [x] Manter fluxo simples: Login/Signup → Receitas
+
+### Fase 5: Desenvolver Plano Alimentar e Calculadora ✅
+- [x] Atualizar design do Plano Alimentar com paleta branco/preto/verde
+- [x] Atualizar header do Plano Alimentar com navegação correta
+- [x] Atualizar design da Calculadora com paleta branco/preto/verde
+- [x] Atualizar header da Calculadora com navegação correta
+- [x] Criar testes para Plano Alimentar (32 testes passando)
+- [x] Criar testes para Calculadora (43 testes passando)
+- [ ] Adicionar links de navegação na Home para Plano e Calculadora
+- [ ] Adicionar footer nas páginas de Plano e Calculadora
