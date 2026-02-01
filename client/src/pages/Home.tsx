@@ -250,7 +250,7 @@ function HomeContent() {
             {/* Feature Cards */}
             <div className="grid grid-cols-2 gap-4">
               <a
-                href="/meal-plan"
+                href="/plano"
                 className="bg-white border-2 border-black rounded-lg p-6 hover:shadow-lg hover:bg-green-50 transition-all group cursor-pointer"
               >
                 <div className="flex items-start justify-between mb-4">
@@ -264,7 +264,7 @@ function HomeContent() {
               </a>
 
               <a
-                href="/calculator"
+                href="/calculadora"
                 className="bg-white border-2 border-black rounded-lg p-6 hover:shadow-lg hover:bg-green-50 transition-all group cursor-pointer"
               >
                 <div className="flex items-start justify-between mb-4">
