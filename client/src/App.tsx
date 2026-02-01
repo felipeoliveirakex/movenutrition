@@ -11,6 +11,7 @@ import Calculator from "./pages/Calculator";
 import HealthTips from "./pages/HealthTips";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import AccessGate from "./pages/AccessGate";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/membros" component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
+      <Route path="/access-gate" component={AccessGate} />
       <Route path="/plano" component={MealPlan} />
       <Route path="/calculadora" component={Calculator} />
       <Route path="/dicas" component={HealthTips} />
