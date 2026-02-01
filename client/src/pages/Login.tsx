@@ -26,10 +26,17 @@ export default function Login() {
       });
 
       if (error) {
-        setError(error.message);
+        // Customizar mensagem de erro
+        if (error.message.includes("Invalid login credentials")) {
+          setError("Usuário ou email de cadastro não encontrado");
+        } else if (error.message.includes("Email not confirmed")) {
+          setError("Por favor, confirme seu email antes de fazer login");
+        } else {
+          setError(error.message);
+        }
       } else if (data.user) {
         setMessage("Login realizado com sucesso!");
-        setTimeout(() => setLocation("/access-gate"), 1500);
+        setTimeout(() => setLocation("/membros"), 1500);
       }
     } catch (err) {
       setError("Erro ao fazer login. Tente novamente.");
@@ -66,8 +73,11 @@ export default function Login() {
           <div className="bg-white border-2 border-black rounded-lg p-8 space-y-6">
             {/* Mensagens */}
             {error && (
-              <div className="bg-red-50 border border-red-300 text-red-700 px-4 py-3 rounded-lg text-sm">
-                {error}
+              <div className="bg-red-50 border-2 border-red-500 text-red-700 px-4 py-3 rounded-lg text-sm font-medium">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">⚠️</span>
+                  <span>{error}</span>
+                </div>
               </div>
             )}
             {message && (

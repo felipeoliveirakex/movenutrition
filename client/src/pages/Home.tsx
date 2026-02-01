@@ -30,6 +30,7 @@ import {
   User
 } from "lucide-react";
 import { useSupabaseAuth } from "@/hooks/useSupabaseAuth";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
 import RecipeModal from "@/components/RecipeModal";
 import RecipeCard from "@/components/RecipeCard";
 import recipesData from "@/data/recipes-complete.json";
@@ -58,7 +59,7 @@ const CATEGORIES = [
   { id: "lanches", label: "Lanches & Sobremesas", emoji: "🍪" },
 ];
 
-export default function Home() {
+function HomeContent() {
   const [, setLocation] = useLocation();
   const { user, logout } = useSupabaseAuth();
   
@@ -138,6 +139,10 @@ export default function Home() {
   };
 
   const activeFiltersCount = selectedBenefits.length + (selectedCategory ? 1 : 0);
+
+  if (!user) {
+    return null;
+  }
 
   return (
     <div className="min-h-screen bg-[oklch(0.98_0.008_85)]">
@@ -527,5 +532,13 @@ export default function Home() {
         onToggleFavorite={() => selectedRecipe && toggleFavorite(selectedRecipe.id)}
       />
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <ProtectedRoute requireAccess={false}>
+      <HomeContent />
+    </ProtectedRoute>
   );
 }
