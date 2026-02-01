@@ -12,6 +12,7 @@ import HealthTips from "./pages/HealthTips";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AccessGate from "./pages/AccessGate";
+import Checkout from "./pages/Checkout";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/access-gate" component={AccessGate} />
+      <Route path="/checkout" component={Checkout} />
       <Route path="/plano" component={MealPlan} />
       <Route path="/calculadora" component={Calculator} />
       <Route path="/dicas" component={HealthTips} />
