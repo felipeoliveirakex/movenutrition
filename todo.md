@@ -71,3 +71,13 @@
 - [x] Criar testes para rating, histórico e health tips (37 testes passando)
 
 ## Total de Testes: 226 testes passando
+
+
+### Fase 8: Correção de Navegação ✅
+- [x] Corrigir botão Go Home para ir para /membros
+- [x] Verificar links em MealPlan
+- [x] Verificar links em Calculator
+- [x] Verificar links em HealthTips
+- [x] Criar testes de navegação (33 testes passando)
+
+## Total de Testes: 259 testes passando
