@@ -11,6 +11,13 @@
 - [x] Atualizar ProtectedRoute para verificar acesso
 - [x] Adicionar rota /access-gate no App.tsx
 
+### Fase 1.5: Design e UX ✅
+- [x] Redesenhar página de login com cores da landing page
+- [x] Redesenhar página de signup com cores da landing page
+- [x] Melhorar página AccessGate com informações sobre planos
+- [x] Adicionar informação sobre 1 mês grátis para clientes
+- [x] Adicionar informação sobre plano pago de R$ 29/mês
+
 ### Fase 2: Banco de Dados (Próximo)
 - [ ] Criar tabela `user_access` no Supabase
 - [ ] Criar tabela `access_codes` no Supabase

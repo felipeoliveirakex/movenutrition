@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Leaf, Mail, Lock, User } from "lucide-react";
+import { Mail, Lock, User, ArrowLeft, Loader2 } from "lucide-react";
 import { useLocation } from "wouter";
 import { supabase } from "@/lib/supabase";
 
@@ -50,7 +50,7 @@ export default function Signup() {
         setError(error.message);
       } else if (data.user) {
         setMessage("Conta criada com sucesso! Redirecionando...");
-        setTimeout(() => setLocation("/membros"), 1500);
+        setTimeout(() => setLocation("/access-gate"), 1500);
       }
     } catch (err) {
       setError("Erro ao criar conta. Tente novamente.");
@@ -60,134 +60,165 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[oklch(0.98_0.02_145)] to-[oklch(0.95_0.03_145)] flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-[oklch(0.50_0.10_145)] to-[oklch(0.60_0.08_145)] rounded-2xl flex items-center justify-center shadow-lg">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
-            <h1 className="text-2xl font-display font-bold text-[oklch(0.30_0.05_145)]">
-              Move Wellness
-            </h1>
+    <div className="min-h-screen bg-white flex flex-col">
+      {/* Header com faixa verde */}
+      <div className="h-1 bg-[#7cb342]"></div>
+
+      {/* Back Button */}
+      <button
+        onClick={() => setLocation("/")}
+        className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 text-black hover:bg-gray-100 rounded-lg transition-colors"
+        title="Voltar à página principal"
+      >
+        <ArrowLeft className="w-4 h-4" />
+        <span className="text-sm font-medium hidden sm:inline">Voltar</span>
+      </button>
+
+      {/* Main Content */}
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
+          {/* Logo e Título */}
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-black mb-2">MOVE</h1>
+            <p className="text-gray-600 text-lg">Crie sua conta</p>
           </div>
-          <p className="text-[oklch(0.50_0.05_145)]">Crie sua conta para acessar as receitas</p>
-        </div>
 
-        {/* Card */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 space-y-6">
-          {/* Messages */}
-          {error && (
-            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
-              {error}
-            </div>
-          )}
-          {message && (
-            <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg text-sm">
-              {message}
-            </div>
-          )}
+          {/* Card de Signup */}
+          <div className="bg-white border-2 border-black rounded-lg p-8 space-y-6">
+            {/* Mensagens */}
+            {error && (
+              <div className="bg-red-50 border border-red-300 text-red-700 px-4 py-3 rounded-lg text-sm">
+                {error}
+              </div>
+            )}
+            {message && (
+              <div className="bg-green-50 border border-green-300 text-green-700 px-4 py-3 rounded-lg text-sm">
+                {message}
+              </div>
+            )}
 
-          {/* Signup Form - Google OAuth será adicionado após configuração */}
-          <form onSubmit={handleSignup} className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-[oklch(0.30_0.05_145)] mb-2">
-                Nome
-              </label>
-              <div className="relative">
-                <User className="absolute left-3 top-3 w-5 h-5 text-[oklch(0.50_0.05_145)]" />
-                <Input
-                  type="text"
-                  placeholder="Seu nome"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  disabled={loading}
-                  className="pl-10"
-                  required
-                />
+            {/* Signup Form */}
+            <form onSubmit={handleSignup} className="space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Nome
+                </label>
+                <div className="relative">
+                  <User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                  <Input
+                    type="text"
+                    placeholder="Seu nome"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    disabled={loading}
+                    className="pl-10 border-gray-300 focus:border-[#7cb342] focus:ring-[#7cb342]"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Email
+                </label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                  <Input
+                    type="email"
+                    placeholder="seu@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    disabled={loading}
+                    className="pl-10 border-gray-300 focus:border-[#7cb342] focus:ring-[#7cb342]"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Senha
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                  <Input
+                    type="password"
+                    placeholder="••••••••"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    disabled={loading}
+                    className="pl-10 border-gray-300 focus:border-[#7cb342] focus:ring-[#7cb342]"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-black mb-2">
+                  Confirmar Senha
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                  <Input
+                    type="password"
+                    placeholder="••••••••"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    disabled={loading}
+                    className="pl-10 border-gray-300 focus:border-[#7cb342] focus:ring-[#7cb342]"
+                    required
+                  />
+                </div>
+              </div>
+
+              <Button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-black hover:bg-gray-900 text-white font-semibold h-12 rounded-lg transition-colors"
+              >
+                {loading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    Criando conta...
+                  </>
+                ) : (
+                  "Criar Conta"
+                )}
+              </Button>
+            </form>
+
+            {/* Divider */}
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-gray-300"></div>
+              </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-2 bg-white text-gray-500">ou</span>
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-[oklch(0.30_0.05_145)] mb-2">
-                Email
-              </label>
-              <div className="relative">
-                <Mail className="absolute left-3 top-3 w-5 h-5 text-[oklch(0.50_0.05_145)]" />
-                <Input
-                  type="email"
-                  placeholder="seu@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={loading}
-                  className="pl-10"
-                  required
-                />
-              </div>
-            </div>
+            {/* Login Link */}
+            <p className="text-center text-sm text-gray-600">
+              Já tem conta?{" "}
+              <button
+                onClick={() => setLocation("/login")}
+                className="text-black font-semibold hover:text-[#7cb342] transition-colors"
+              >
+                Fazer login
+              </button>
+            </p>
+          </div>
 
-            <div>
-              <label className="block text-sm font-medium text-[oklch(0.30_0.05_145)] mb-2">
-                Senha
-              </label>
-              <div className="relative">
-                <Lock className="absolute left-3 top-3 w-5 h-5 text-[oklch(0.50_0.05_145)]" />
-                <Input
-                  type="password"
-                  placeholder="••••••••"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  disabled={loading}
-                  className="pl-10"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-[oklch(0.30_0.05_145)] mb-2">
-                Confirmar Senha
-              </label>
-              <div className="relative">
-                <Lock className="absolute left-3 top-3 w-5 h-5 text-[oklch(0.50_0.05_145)]" />
-                <Input
-                  type="password"
-                  placeholder="••••••••"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  disabled={loading}
-                  className="pl-10"
-                  required
-                />
-              </div>
-            </div>
-
-            <Button
-              type="submit"
-              disabled={loading}
-              className="w-full bg-gradient-to-r from-[oklch(0.50_0.10_145)] to-[oklch(0.55_0.09_145)] hover:from-[oklch(0.48_0.10_145)] hover:to-[oklch(0.53_0.09_145)] text-white font-medium h-11"
-            >
-              {loading ? "Criando conta..." : "Criar Conta"}
-            </Button>
-          </form>
-
-          {/* Login Link */}
-          <p className="text-center text-sm text-[oklch(0.50_0.05_145)]">
-            Já tem conta?{" "}
-            <button
-              onClick={() => setLocation("/login")}
-              className="text-[oklch(0.50_0.10_145)] font-medium hover:underline"
-            >
-              Fazer login
-            </button>
+          {/* Footer Info */}
+          <p className="text-center text-xs text-gray-500 mt-8">
+            Suas receitas estão seguras conosco
           </p>
         </div>
+      </div>
 
-        {/* Footer */}
-        <p className="text-center text-xs text-[oklch(0.50_0.05_145)] mt-8">
-          Suas receitas estão seguras conosco
-        </p>
+      {/* Footer */}
+      <div className="bg-black text-white py-6 px-4 text-center text-sm">
+        <p>© 2024 Move Wellness. Todos os direitos reservados.</p>
       </div>
     </div>
   );
