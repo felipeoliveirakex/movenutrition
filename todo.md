@@ -77,14 +77,11 @@
 - [x] Testes da página Home (27 testes passando)
 - [x] Fluxo completo: Login → Home unificada com tudo em um lugar
 
-### Fase 4: Banner de Benefícios e Checkout ✅
-- [x] Criar banner de benefícios com 5 argumentos principais
-- [x] Exibir preço R$ 29/mês com informações de pagamento
-- [x] Adicionar CTA "Assinar Agora" com link para checkout
-- [x] Criar página de checkout com resumo do pedido
-- [x] Implementar formulário de dados de pagamento
-- [x] Adicionar segurança e informações de proteção de dados
-- [x] Mostrar benefícios no checkout para reforçar decisão
-- [x] Integrar rota /checkout no App.tsx
-- [x] Testes de banner e checkout (33 testes passando)
-- [x] Design consistente com paleta de cores
+### Fase 4: Simplificação - Remover Sistema de Pagamento ✅
+- [x] Remover banner de benefícios da página inicial
+- [x] Remover página de checkout
+- [x] Remover componente PremiumBanner
+- [x] Remover rota /checkout do App.tsx
+- [x] Remover testes de pagamento
+- [x] Limpar imports não utilizados
+- [x] Manter fluxo simples: Login/Signup → Receitas

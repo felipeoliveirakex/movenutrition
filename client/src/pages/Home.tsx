@@ -19,14 +19,10 @@ import {
   Filter,
   LogOut,
   ArrowRight,
-  Calendar,
-  Check,
-  CreditCard,
-  Lock
+  Calendar
 } from "lucide-react";
 import { useSupabaseAuth } from "@/hooks/useSupabaseAuth";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
-import { PremiumBanner } from "@/components/PremiumBanner";
 import RecipeModal from "@/components/RecipeModal";
 import RecipeCard from "@/components/RecipeCard";
 import recipesData from "@/data/recipes-complete.json";
@@ -249,9 +245,6 @@ function HomeContent() {
           </div>
         </div>
       </section>
-
-      {/* Premium Benefits Banner */}
-      <PremiumBanner />
 
       {/* Weekly Suggestions */}
       <section className="py-12 border-b-2 border-[#7cb342]/20">
