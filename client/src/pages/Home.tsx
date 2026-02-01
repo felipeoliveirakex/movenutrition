@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import { useSupabaseAuth } from "@/hooks/useSupabaseAuth";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { WelcomeDashboard } from "@/components/WelcomeDashboard";
 import RecipeModal from "@/components/RecipeModal";
 import RecipeCard from "@/components/RecipeCard";
 import recipesData from "@/data/recipes-complete.json";
@@ -70,6 +71,7 @@ function HomeContent() {
   const [favorites, setFavorites] = useState<number[]>([]);
   const [showFilters, setShowFilters] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(true);
 
   // Load favorites from localStorage
   useEffect(() => {
@@ -78,6 +80,18 @@ function HomeContent() {
       setFavorites(JSON.parse(saved));
     }
   }, []);
+
+  // Check if user has visited before
+  useEffect(() => {
+    if (user?.id) {
+      const hasVisited = localStorage.getItem(`wellness-visited-${user.id}`);
+      if (hasVisited) {
+        setShowWelcome(false);
+      } else {
+        localStorage.setItem(`wellness-visited-${user.id}`, "true");
+      }
+    }
+  }, [user?.id]);
 
   // Save favorites to localStorage
   useEffect(() => {
@@ -142,6 +156,16 @@ function HomeContent() {
 
   if (!user) {
     return null;
+  }
+
+  if (showWelcome) {
+    return (
+      <WelcomeDashboard
+        user={user}
+        onStartExploring={() => setShowWelcome(false)}
+        onViewCategory={() => setShowWelcome(false)}
+      />
+    );
   }
 
   return (
