@@ -65,3 +65,14 @@
 - [x] Implementar lógica de primeira visita vs retorno
 - [x] Salvar status de visita no localStorage
 - [x] Testes do WelcomeDashboard (13 testes passando)
+
+### Fase 3: Página Inicial Unificada ✅
+- [x] Consolidar WelcomeDashboard e receitas em uma única página
+- [x] Adicionar boas-vindas personalizado com nome do usuário
+- [x] Exibir sugestões de semana (4 temas diferentes)
+- [x] Integrar busca e filtros na mesma página
+- [x] Manter design consistente com paleta de cores (branco, preto, verde)
+- [x] Adicionar header com logo e botão de logout
+- [x] Implementar grid responsivo de receitas
+- [x] Testes da página Home (27 testes passando)
+- [x] Fluxo completo: Login → Home unificada com tudo em um lugar
