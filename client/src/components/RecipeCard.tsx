@@ -8,7 +8,8 @@
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Clock, Flame } from "lucide-react";
+import { Heart, Clock, Flame, Share2 } from "lucide-react";
+import { ShareButton } from "./ShareButton";
 
 interface Recipe {
   id: number;
@@ -36,6 +37,7 @@ interface RecipeCardProps {
   isFavorite: boolean;
   onToggleFavorite: () => void;
   onOpen: () => void;
+  onShare?: () => void;
 }
 
 export default function RecipeCard({ recipe, isFavorite, onToggleFavorite, onOpen }: RecipeCardProps) {
@@ -52,19 +54,22 @@ export default function RecipeCard({ recipe, isFavorite, onToggleFavorite, onOpe
     >
       {/* Header with emoji and gradient */}
       <div className="relative bg-gradient-to-br from-[oklch(0.94_0.02_145)] to-[oklch(0.96_0.03_55)] p-5">
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleFavorite();
-          }}
-          className="absolute top-3 right-3 p-2 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white transition-all shadow-sm z-10"
-        >
-          <Heart
-            className={`w-4 h-4 transition-colors ${
-              isFavorite ? "fill-red-500 text-red-500" : "text-gray-400 group-hover:text-gray-600"
-            }`}
-          />
-        </button>
+        <div className="absolute top-3 right-3 flex gap-2">
+          <ShareButton title={recipe.name} description={recipe.benefits.join(", ")} />
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleFavorite();
+            }}
+            className="p-2 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white transition-all shadow-sm z-10"
+          >
+            <Heart
+              className={`w-4 h-4 transition-colors ${
+                isFavorite ? "fill-red-500 text-red-500" : "text-gray-400 group-hover:text-gray-600"
+              }`}
+            />
+          </button>
+        </div>
         
         <div className="text-5xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
           {recipe.image}

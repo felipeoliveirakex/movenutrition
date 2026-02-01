@@ -228,7 +228,7 @@ function HomeContent() {
             </p>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="bg-white border-2 border-black rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-[#7cb342]">50+</div>
                 <div className="text-xs text-gray-600">Receitas</div>
@@ -239,8 +239,39 @@ function HomeContent() {
               </div>
               <div className="bg-white border-2 border-black rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-[#7cb342]">9</div>
-                <div className="text-xs text-gray-600">Benefícios</div>
+                <div className="text-xs text-gray-600">Benéficios</div>
               </div>
+            </div>
+
+            {/* Feature Cards */}
+            <div className="grid grid-cols-2 gap-4">
+              <a
+                href="/meal-plan"
+                className="bg-white border-2 border-black rounded-lg p-6 hover:shadow-lg hover:bg-green-50 transition-all group cursor-pointer"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 bg-[#7cb342] rounded-lg flex items-center justify-center">
+                    <Calendar className="w-6 h-6 text-white" />
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-[#7cb342] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="font-bold text-black mb-1">Plano Alimentar</h4>
+                <p className="text-sm text-gray-600">Cardápio semanal personalizado</p>
+              </a>
+
+              <a
+                href="/calculator"
+                className="bg-white border-2 border-black rounded-lg p-6 hover:shadow-lg hover:bg-green-50 transition-all group cursor-pointer"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 bg-[#7cb342] rounded-lg flex items-center justify-center">
+                    <Sparkles className="w-6 h-6 text-white" />
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-[#7cb342] group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="font-bold text-black mb-1">Calculadora</h4>
+                <p className="text-sm text-gray-600">Calorias e macros personalizados</p>
+              </a>
             </div>
           </div>
         </div>
