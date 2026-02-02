@@ -167,13 +167,11 @@ export default function Calculator() {
       <header className="sticky top-0 z-50 bg-white border-b-2 border-black">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/membros">
-              <a className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#7cb342] rounded-lg flex items-center justify-center">
-                  <Leaf className="w-5 h-5 text-white" />
-                </div>
-                <span className="font-bold text-black">Move Wellness</span>
-              </a>
+            <Link href="/membros" className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-[#7cb342] rounded-lg flex items-center justify-center">
+                <Leaf className="w-5 h-5 text-white" />
+              </div>
+              <span className="font-bold text-black">Move Wellness</span>
             </Link>
           </div>
         </div>

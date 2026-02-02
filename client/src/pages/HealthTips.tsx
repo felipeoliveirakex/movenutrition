@@ -298,18 +298,14 @@ export default function HealthTips() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/">
-              <a>
-                <Button variant="secondary" size="lg">
-                  📚 Ver Receitas
-                </Button>
-              </a>
+              <Button variant="secondary" size="lg">
+                📚 Ver Receitas
+              </Button>
             </Link>
             <Link href="/plano">
-              <a>
-                <Button variant="secondary" size="lg">
-                  📅 Plano Alimentar
-                </Button>
-              </a>
+              <Button variant="secondary" size="lg">
+                📅 Plano Alimentar
+              </Button>
             </Link>
           </div>
         </div>
