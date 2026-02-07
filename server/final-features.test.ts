@@ -207,10 +207,11 @@ describe("Difficulty Filter", () => {
       { id: 2, difficulty: "médio" },
       { id: 3, difficulty: "difícil" },
     ];
+    const selectedDifficulty: string | null = null;
     const filtered = recipes.filter(
-      (r) => !null || r.difficulty === null
+      (r) => selectedDifficulty === null || r.difficulty === selectedDifficulty
     );
-    expect(filtered.length).toBeGreaterThan(0);
+    expect(filtered).toHaveLength(recipes.length);
   });
 
   it("should update recipe count when filtering", () => {
