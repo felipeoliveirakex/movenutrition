@@ -2,10 +2,12 @@
   "buildCommand": "pnpm build",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
-  "framework": "vite",
+  "framework": null,
   "outputDirectory": "dist",
   "public": false,
-  "regions": ["sfo1"],
+  "env": {
+    "NODE_ENV": "production"
+  },
   "functions": {
     "server/index.ts": {
       "runtime": "nodejs20.x",
@@ -13,18 +15,14 @@
       "maxDuration": 60
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server/index.ts",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+      "source": "/api/(.*)",
+      "destination": "/server/index.ts"
     },
     {
-      "src": "/(.*)",
-      "dest": "/server/index.ts"
+      "source": "/(.*)",
+      "destination": "/server/index.ts"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
