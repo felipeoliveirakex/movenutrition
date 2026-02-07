@@ -27,6 +27,8 @@ import {
 import { Link } from "wouter";
 import recipesData from "@/data/recipes-complete.json";
 import RecipeModal from "@/components/RecipeModal";
+import { useGoals } from "@/hooks/useGoals";
+import { todayKey } from "@/lib/goals";
 
 type Recipe = typeof recipesData[0];
 
@@ -78,12 +80,18 @@ const generateWeekPlan = () => {
 };
 
 export default function MealPlan() {
+  const { api: goalsApi } = useGoals();
   const [weekPlan, setWeekPlan] = useState(() => generateWeekPlan());
   const [selectedDay, setSelectedDay] = useState(new Date().getDay());
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
 
+  const trackBuilt = () => {
+    goalsApi?.incrementEvent("mealplan_built", { signature: todayKey() });
+  };
+
   const regeneratePlan = () => {
     setWeekPlan(generateWeekPlan());
+    trackBuilt();
   };
 
   const regenerateMeal = (dayId: number, mealId: string) => {
@@ -103,6 +111,8 @@ export default function MealPlan() {
         [mealId]: newRecipe,
       },
     }));
+
+    trackBuilt();
   };
 
   // Calculate daily totals
@@ -153,6 +163,8 @@ export default function MealPlan() {
 
     navigator.clipboard.writeText(text);
     alert("Plano copiado para a área de transferência!");
+
+    trackBuilt();
   };
 
   return (

@@ -3,7 +3,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
+import GoalCelebrationOverlay from "./components/GoalCelebrationOverlay";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { GoalCelebrationProvider } from "./contexts/GoalCelebrationContext";
 import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
 import MealPlan from "./pages/MealPlan";
@@ -12,6 +14,7 @@ import HealthTips from "./pages/HealthTips";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AccessGate from "./pages/AccessGate";
+import MyRecipes from "./pages/MyRecipes";
 
 function Router() {
   return (
@@ -24,6 +27,7 @@ function Router() {
       <Route path="/plano" component={MealPlan} />
       <Route path="/calculadora" component={Calculator} />
       <Route path="/dicas" component={HealthTips} />
+      <Route path="/minhas-receitas" component={MyRecipes} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
@@ -36,7 +40,10 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <GoalCelebrationProvider>
+            <Router />
+            <GoalCelebrationOverlay />
+          </GoalCelebrationProvider>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

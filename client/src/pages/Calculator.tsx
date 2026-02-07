@@ -32,6 +32,7 @@ import {
   Minus,
 } from "lucide-react";
 import { Link } from "wouter";
+import { useGoals } from "@/hooks/useGoals";
 
 type Goal = "lose" | "maintain" | "gain";
 type ActivityLevel = "sedentary" | "light" | "moderate" | "active" | "very_active";
@@ -66,6 +67,7 @@ const GOAL_LABELS: Record<Goal, { label: string; icon: typeof TrendingDown }> = 
 };
 
 export default function Calculator() {
+  const { api: goalsApi } = useGoals();
   const [gender, setGender] = useState<Gender>("male");
   const [age, setAge] = useState("");
   const [weight, setWeight] = useState("");
@@ -152,6 +154,18 @@ export default function Calculator() {
 
   const handleCalculate = () => {
     if (results) {
+      const signature = [gender, age, weight, height, activity, goal].join("|");
+      goalsApi?.incrementEvent("calculator_used", { signature });
+
+      const weightNum = parseFloat(weight);
+      if (Number.isFinite(weightNum) && weightNum > 0) {
+        goalsApi?.setFromCalculator({
+          weightKg: weightNum,
+          waterTargetMl: Math.round(weightNum * 35),
+          direction: goal,
+        });
+      }
+
       setShowResults(true);
     }
   };

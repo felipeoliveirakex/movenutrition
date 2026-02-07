@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Clock, Users, Flame, Copy, Check, Lightbulb, RefreshCw } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useGoals } from "@/hooks/useGoals";
 
 interface Recipe {
   id: number;
@@ -45,6 +46,7 @@ interface RecipeModalProps {
 export default function RecipeModal({ recipe, isOpen, onClose, isFavorite, onToggleFavorite }: RecipeModalProps) {
   const [checkedIngredients, setCheckedIngredients] = useState<number[]>([]);
   const [copied, setCopied] = useState(false);
+  const { api: goalsApi } = useGoals();
 
   if (!recipe) return null;
 
@@ -71,6 +73,9 @@ ${recipe.tips.map((tip) => `• ${tip}`).join("\n")}
     navigator.clipboard.writeText(recipeText);
     setCopied(true);
     toast.success("Receita copiada para a área de transferência!");
+
+    goalsApi?.incrementEvent("recipe_copied", { signature: String(recipe.id) });
+
     setTimeout(() => setCopied(false), 2000);
   };
 

@@ -1,7 +1,17 @@
 import { describe, expect, it } from "vitest";
 import { createClient } from "@supabase/supabase-js";
 
-describe("Supabase Configuration", () => {
+const runIntegration = process.env.RUN_INTEGRATION_TESTS === "true";
+const hasCredentials = Boolean(
+  process.env.VITE_SUPABASE_URL &&
+    process.env.VITE_SUPABASE_ANON_KEY &&
+    process.env.SUPABASE_SERVICE_ROLE_KEY
+);
+
+const describeIntegration =
+  runIntegration && hasCredentials ? describe : describe.skip;
+
+describeIntegration("Supabase Configuration", () => {
   it("should connect to Supabase with valid credentials", async () => {
     const supabaseUrl = process.env.VITE_SUPABASE_URL;
     const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY;

@@ -25,7 +25,9 @@ import { useSupabaseAuth } from "@/hooks/useSupabaseAuth";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import RecipeModal from "@/components/RecipeModal";
 import RecipeCard from "@/components/RecipeCard";
+import GoalsPanel from "@/components/GoalsPanel";
 import recipesData from "@/data/recipes-complete.json";
+import { useGoals } from "@/hooks/useGoals";
 
 type Recipe = typeof recipesData[0];
 
@@ -86,6 +88,7 @@ const WEEKLY_SUGGESTIONS = [
 function HomeContent() {
   const [, setLocation] = useLocation();
   const { user, logout } = useSupabaseAuth();
+  const { api: goalsApi } = useGoals();
   
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedBenefits, setSelectedBenefits] = useState<string[]>([]);
@@ -158,6 +161,9 @@ function HomeContent() {
     setFavorites((prev) =>
       prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id]
     );
+
+    // Achievement: favoritar (conta eventos agregados; dedupe por assinatura opcional no engine)
+    goalsApi?.incrementEvent("recipe_favorited", { signature: String(id) });
   };
 
   const resetFilters = () => {
@@ -207,6 +213,15 @@ function HomeContent() {
                   </span>
                 </div>
               )}
+
+              <button
+                onClick={() => setLocation("/minhas-receitas")}
+                className="px-3 py-2 border-2 border-black rounded-lg hover:bg-gray-50 transition-colors text-black text-sm font-semibold"
+                title="Minhas receitas"
+              >
+                Minhas receitas
+              </button>
+
               <button
                 onClick={logout}
                 className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-lg transition-colors text-black"
@@ -280,6 +295,8 @@ function HomeContent() {
           </div>
         </div>
       </section>
+
+      <GoalsPanel />
 
       {/* Weekly Suggestions */}
       <section className="py-12 border-b-2 border-[#7cb342]/20 animate-fade-in">

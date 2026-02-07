@@ -1,6 +1,14 @@
 import { describe, expect, it } from "vitest";
 
-describe("Mercado Pago Integration", () => {
+const runIntegration = process.env.RUN_INTEGRATION_TESTS === "true";
+const hasCredentials = Boolean(
+  process.env.MERCADO_PAGO_ACCESS_TOKEN && process.env.MERCADO_PAGO_PUBLIC_KEY
+);
+
+const describeIntegration =
+  runIntegration && hasCredentials ? describe : describe.skip;
+
+describeIntegration("Mercado Pago Integration", () => {
   it("should validate Mercado Pago credentials", async () => {
     const accessToken = process.env.MERCADO_PAGO_ACCESS_TOKEN;
     const publicKey = process.env.MERCADO_PAGO_PUBLIC_KEY;

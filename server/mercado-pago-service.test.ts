@@ -1,68 +1,91 @@
 import { describe, expect, it, beforeEach, vi } from "vitest";
-import {
-  createCheckout,
-  verifyPayment,
-  checkUserAccess,
-} from "./mercado-pago-service";
 
 describe("Mercado Pago Service", () => {
   beforeEach(() => {
-    // Mock environment variables
-    process.env.MERCADO_PAGO_ACCESS_TOKEN =
-      "APP_USR-4015968143476277-020112-4b3a72e083611213c6a042fd956a5335-180181928";
+    vi.resetModules();
+
+    // Mock environment variables (no real secrets in tests)
+    process.env.MERCADO_PAGO_ACCESS_TOKEN = "APP_USR-TEST";
+    process.env.MERCADO_PAGO_PUBLIC_KEY = "APP_USR-TEST";
     process.env.VITE_SUPABASE_URL = "https://ksxjddrfwkjygvwsmyjb.supabase.co";
     process.env.SUPABASE_SERVICE_ROLE_KEY = "test-key";
+
+    globalThis.fetch = vi.fn(async (url: any, init?: any) => {
+      const asString = String(url);
+      if (asString.includes("/checkout/preferences")) {
+        return {
+          ok: true,
+          status: 200,
+          async json() {
+            return { init_point: "https://mp.test/checkout", id: "pref_test" };
+          },
+        } as any;
+      }
+
+      if (asString.includes("/payments/")) {
+        return {
+          ok: true,
+          status: 200,
+          async json() {
+            return {
+              status: "approved",
+              external_reference: "test-user-123",
+              payer: { email: "test@example.com" },
+              transaction_amount: 29,
+            };
+          },
+        } as any;
+      }
+
+      return {
+        ok: false,
+        status: 404,
+        async json() {
+          return { message: "not found" };
+        },
+      } as any;
+    }) as any;
   });
 
   describe("createCheckout", () => {
     it("should create a checkout with valid parameters", async () => {
+      const { createCheckout } = await import("./mercado-pago-service");
       const params = {
         userId: "test-user-123",
         userEmail: "test@example.com",
       };
 
-      try {
-        const result = await createCheckout(params);
-        expect(result).toHaveProperty("checkoutUrl");
-        expect(result).toHaveProperty("preferenceId");
-      } catch (error) {
-        // Expected to fail in test environment without real Supabase
-        expect(error).toBeDefined();
-      }
+      const result = await createCheckout(params);
+      expect(result).toHaveProperty("checkoutUrl");
+      expect(result).toHaveProperty("preferenceId");
     });
 
     it("should include correct amount in checkout", async () => {
+      const { createCheckout } = await import("./mercado-pago-service");
       const params = {
         userId: "test-user-123",
         userEmail: "test@example.com",
         amount: 2900, // R$ 29.00
       };
 
-      try {
-        const result = await createCheckout(params);
-        expect(result).toBeDefined();
-      } catch (error) {
-        // Expected to fail in test environment
-        expect(error).toBeDefined();
-      }
+      const result = await createCheckout(params);
+      expect(result).toBeDefined();
     });
   });
 
   describe("checkUserAccess", () => {
     it("should return no access for non-existent user", async () => {
+      const { checkUserAccess } = await import("./mercado-pago-service");
       const result = await checkUserAccess("non-existent-user");
       expect(result.hasAccess).toBe(false);
       expect(result.accessType).toBeNull();
     });
 
     it("should have error handling", async () => {
-      try {
-        const result = await checkUserAccess("test-user");
-        expect(result).toHaveProperty("hasAccess");
-        expect(result).toHaveProperty("accessType");
-      } catch (error) {
-        expect(error).toBeDefined();
-      }
+      const { checkUserAccess } = await import("./mercado-pago-service");
+      const result = await checkUserAccess("test-user");
+      expect(result).toHaveProperty("hasAccess");
+      expect(result).toHaveProperty("accessType");
     });
   });
 
