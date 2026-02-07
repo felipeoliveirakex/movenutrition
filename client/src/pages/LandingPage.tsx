@@ -94,7 +94,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="absolute -inset-4 bg-[#7cb342] rounded-2xl blur-2xl opacity-20"></div>
               <img
-                src="/images/hero-healthy-food.jpg"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663232562443/ZtNQceLmZBBfwUOq.jpg"
                 alt="Comida Saudável"
                 className="relative rounded-2xl shadow-2xl w-full"
               />

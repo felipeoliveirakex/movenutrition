@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { ChevronDown, Heart, AlertCircle, Lightbulb, Zap } from "lucide-react";
+import { ChevronDown, Heart, AlertCircle, Lightbulb, Zap, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { BackButton } from "@/components/BackButton";
 
 interface Tip {
   id: string;
@@ -179,11 +180,13 @@ export default function HealthTips() {
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white border-b border-green-100">
         <div className="container py-4">
-          <Link href="/">
-            <a className="flex items-center gap-2 text-green-700 hover:text-green-800 font-semibold mb-4">
-              ← Voltar para Receitas
-            </a>
-          </Link>
+          <div className="flex items-center gap-4 mb-4">
+            <BackButton label="Voltar" />
+            <div className="w-10 h-10 bg-[#7cb342] rounded-lg flex items-center justify-center">
+              <Leaf className="w-5 h-5 text-white" />
+            </div>
+            <span className="font-bold text-black">Move Wellness</span>
+          </div>
           <div>
             <h1 className="text-3xl font-bold text-green-800 mb-2">
               💚 Dicas de Saúde
